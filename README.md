@@ -12,7 +12,7 @@ Distraction Maze is an immersive escape room experience that challenges the play
 ## OBJECTIVES:
 - Test and enhance focus, problem-solving, and time management skills.
 - Encourage strategic decision-making in managing distractions.
-- 
+
 ## CLASSIFICATION
 This will be built on the Oculus Quest, because I have full-time access to one, and for its hand-tracking capabilities, which will allow for more natural interaction when the user is organizing objects. This will still be a mostly
 stationary experience but will at points move the user to different places in the room. This experience is meant to be mentally stimulating, to either entertain users or help them focus before doing another task.
