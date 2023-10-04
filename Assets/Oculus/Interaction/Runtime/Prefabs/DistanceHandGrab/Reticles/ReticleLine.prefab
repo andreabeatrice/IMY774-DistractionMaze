@@ -30,6 +30,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,6 +68,8 @@ MonoBehaviour:
   _filter: {fileID: 5851776312465013530}
   _renderer: {fileID: 340675078661272390}
   _divisions: 6
+  _bevel: 4
+  _renderQueue: -1
   _radius: 0.005
   _gradient:
     serializedVersion: 2
@@ -99,8 +102,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _tint: {r: 1, g: 1, b: 1, a: 1}
   _progressFade: 0.2
-  _progress: 0
-  _endThresold: 0.2
+  _startFadeThresold: 0.2
+  _endFadeThresold: 0.2
+  _invertThreshold: 0
+  _feather: 0.2
   _mirrorTexture: 1
 --- !u!33 &5851776312465013530
 MeshFilter:
@@ -121,6 +126,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
