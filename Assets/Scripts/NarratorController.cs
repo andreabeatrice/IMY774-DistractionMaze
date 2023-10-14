@@ -5,30 +5,46 @@ using UnityEngine;
 public class NarratorController : MonoBehaviour{
     
     [SerializeField]
-    private Animator POST_PROCESSOR, THE_TABLE;
+    private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET;
 
     [SerializeField]
     private AudioSource Narrator;
 
-    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty;
+    [SerializeField]
+    GameObject DistanceInteractorLeft, DistanceInteractorRight;
+
+    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor;
+
+    private bool FirstTouchPickUp, DistancePickupTutorial, FirstSummoning;
 
     // Start is called before the first frame update
     void Start(){
         POST_PROCESSOR.Play("Eyes Open");
 
         StartCoroutine(WaitForWakeup());
-        Debug.Log(POST_PROCESSOR.GetCurrentAnimatorStateInfo(0));
 
-
+        FirstTouchPickUp = true;
+        DistancePickupTutorial = true;
+        FirstSummoning = true;
     }
 
     // Update is called once per frame
     void Update(){
+        OVRInput.Update();
+    }
 
+    void FixedUpdate()
+    {
+        OVRInput.FixedUpdate();
     }
 
     private IEnumerator WaitForWakeup(){
-        yield return new WaitForSeconds(10f);
+        DistanceInteractorLeft.SetActive(false);
+        DistanceInteractorRight.SetActive(false);
+        
+        //10f
+        yield return new WaitForSeconds(1f);
+        
 
         Narrator.Play();
 
@@ -50,8 +66,61 @@ public class NarratorController : MonoBehaviour{
 
         THE_TABLE.Play("reveal_ball");
 
-        //Narrator.clip = YouKnowEvenThoughThisRoomIsVeryEmpty;
+        StartCoroutine(PickItUp());
 
-        //Narrator.Play();
+    }
+
+    private IEnumerator PickItUp(){
+        yield return new WaitForSeconds(3f);
+
+        Narrator.clip = GoOnPickItUp;
+
+        Narrator.Play();
+    }
+
+
+    public void WellDone(){
+
+        if (FirstTouchPickUp){
+
+            FirstTouchPickUp = false; 
+
+            THE_TARGET.Play("show_target");
+
+            Narrator.clip = WellDoneOnPickingItUp;
+
+            Narrator.Play();
+
+        }
+
+    }
+
+    public void YouMissed() {
+        if (DistancePickupTutorial) {
+            DistancePickupTutorial = false;
+
+            Narrator.clip = ShameYouMissed;
+
+            Narrator.Play();
+
+            ShowDistanceGrab();
+        }
+    }
+
+    public void ShowDistanceGrab(){
+        DistanceInteractorLeft.SetActive(true);
+        DistanceInteractorRight.SetActive(true);
+    }
+
+    public void SummonedTheBall(){
+          if (FirstSummoning){
+
+            FirstSummoning = false; 
+
+            Narrator.clip = FingersChangingColor;
+
+            Narrator.Play();
+
+        }
     }
 }
