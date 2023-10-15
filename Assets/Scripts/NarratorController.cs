@@ -5,7 +5,7 @@ using UnityEngine;
 public class NarratorController : MonoBehaviour{
     
     [SerializeField]
-    private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET;
+    private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET, THE_LIGHT;
 
     [SerializeField]
     private AudioSource Narrator;
@@ -13,9 +13,12 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     GameObject DistanceInteractorLeft, DistanceInteractorRight;
 
-    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor;
+    [SerializeField]
+    OriginalPositionCheck OPC;
 
-    private bool FirstTouchPickUp, DistancePickupTutorial, FirstSummoning;
+    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio;
+
+    private bool FirstTouchPickUp, DistancePickupTutorial;
 
     // Start is called before the first frame update
     void Start(){
@@ -25,7 +28,7 @@ public class NarratorController : MonoBehaviour{
 
         FirstTouchPickUp = true;
         DistancePickupTutorial = true;
-        FirstSummoning = true;
+        
     }
 
     // Update is called once per frame
@@ -82,10 +85,11 @@ public class NarratorController : MonoBehaviour{
     public void WellDone(){
 
         if (FirstTouchPickUp){
+            StopAllCoroutines();
 
             FirstTouchPickUp = false; 
 
-            THE_TARGET.Play("show_target");
+            THE_TARGET.Play("show_target_long");
 
             Narrator.clip = WellDoneOnPickingItUp;
 
@@ -103,6 +107,8 @@ public class NarratorController : MonoBehaviour{
 
             Narrator.Play();
 
+            StartCoroutine(ExplainFingers());
+
             ShowDistanceGrab();
         }
     }
@@ -112,15 +118,46 @@ public class NarratorController : MonoBehaviour{
         DistanceInteractorRight.SetActive(true);
     }
 
-    public void SummonedTheBall(){
-          if (FirstSummoning){
+    public IEnumerator ExplainFingers(){
+        yield return new WaitForSeconds(13f);
 
-            FirstSummoning = false; 
+        Narrator.clip = FingersChangingColor;
 
-            Narrator.clip = FingersChangingColor;
+        Narrator.Play();
+    }
 
+    public void ThatTookLong(){
+        Narrator.clip = ThatTookLongAudio;
+
+        Narrator.Play();
+
+        StartCoroutine(PleaseReturn());
+    }
+
+    public IEnumerator PleaseReturn(){
+        yield return new WaitForSeconds(3f);
+
+        if (OPC.InArea == true){
+            THE_LIGHT.Play("DefaultState");
+            
+        } else {
+            Narrator.clip = PleaseReturnAudio;
             Narrator.Play();
+            THE_LIGHT.Play("colour_change");
+
+            StartCoroutine(PleaseReturn());
 
         }
+
     }
+
+    // public void SummonedTheBall(){
+    //       if (FirstSummoning){
+
+    //         FirstSummoning = false; 
+
+           
+
+    //     }
+    // }
 }
