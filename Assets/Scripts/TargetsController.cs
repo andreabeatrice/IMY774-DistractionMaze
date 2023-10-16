@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TargetsController : MonoBehaviour
 {
+    [SerializeField]
+    GlobalControls GLOBAL_CONTROL;
 
     public Collider wall_Collider; 
 
@@ -13,19 +15,31 @@ public class TargetsController : MonoBehaviour
     public GameObject ball;
     Vector3 m_Size, m_Min, m_Max, ball_Position;
 
+    public Collider TARGET_COLLIDER;
+
     bool InArea, WallMovingEnabled, WME;
     // Start is called before the first frame update
     void Start()
     {
-        InArea= false;
-        WallMovingEnabled = true;
-        WME = true;
         //Fetch the minimum and maximum bounds of the Collider volume
         m_Min = wall_Collider.bounds.min;
-        m_Max = wall_Collider.bounds.max;    
+         m_Max = wall_Collider.bounds.max; 
 
-        Debug.Log("Collider bound Minimum : " + m_Min);
-        Debug.Log("Collider bound Maximum : " + m_Max);
+        if(!GLOBAL_CONTROL.GetTesting()){
+            InArea= false;
+            WallMovingEnabled = true;
+            WME = true;
+        }
+        else {
+            InArea= false;
+            WallMovingEnabled = false;
+            WME = false;
+            Debug.Log("Collider bound Minimum : " + m_Min);
+            Debug.Log("Collider bound Maximum : " + m_Max);
+        }
+ 
+
+
     }
 
     // Update is called once per frame
@@ -54,12 +68,22 @@ public class TargetsController : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision){
-        Debug.Log("Entered collision with " + collision.gameObject.name);
+
+        if (GLOBAL_CONTROL.GetTesting()){
+            Debug.Log("Entered collision with " + collision.gameObject.name);
+        }
+
+        TARGET_COLLIDER.enabled = false;
+        
 
         if(collision.gameObject.name == "Ball" && WME){
             TARGET_ANIMATOR.speed = 0;
             WME = false;
 
+            NARRATOR.ThatTookLong();
+        }
+
+        if(GLOBAL_CONTROL.GetTesting()){
             NARRATOR.ThatTookLong();
         }
        

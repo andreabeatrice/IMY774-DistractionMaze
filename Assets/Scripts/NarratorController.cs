@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NarratorController : MonoBehaviour{
+
+    [SerializeField]
+    GlobalControls GLOBAL_CONTROL;
+
+    [SerializeField]
+    CountdownClock CLOCK;
     
     [SerializeField]
     private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET, THE_LIGHT;
@@ -16,18 +22,27 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     OriginalPositionCheck OPC;
 
-    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio;
+    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio;
 
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
     // Start is called before the first frame update
     void Start(){
-        POST_PROCESSOR.Play("Eyes Open");
+        if(!GLOBAL_CONTROL.GetTesting()){
+            POST_PROCESSOR.Play("Eyes Open");
 
-        StartCoroutine(WaitForWakeup());
+            StartCoroutine(WaitForWakeup());
 
-        FirstTouchPickUp = true;
-        DistancePickupTutorial = true;
+            FirstTouchPickUp = true;
+            DistancePickupTutorial = true;
+        }
+        else {
+            ShowDistanceGrab();
+            FirstTouchPickUp = false;
+            DistancePickupTutorial = false;
+            THE_TABLE.Play("reveal_ball");
+            THE_TARGET.Play("show_target");
+        }
         
     }
 
@@ -139,6 +154,12 @@ public class NarratorController : MonoBehaviour{
 
         if (OPC.InArea == true){
             THE_LIGHT.Play("DefaultState");
+            Narrator.clip = SocketAudio;
+            Narrator.Play();
+
+            THE_TABLE.Play("socket_tray_rise");
+            StartCoroutine(ShowSocket());
+            //CLOCK.StartNewSecondsCountdown(10);
             
         } else {
             Narrator.clip = PleaseReturnAudio;
@@ -150,6 +171,25 @@ public class NarratorController : MonoBehaviour{
         }
 
     }
+
+    public IEnumerator ShowSocket(){
+        yield return new WaitForSeconds(1.5f);
+
+        THE_TABLE.Play("socket_tray_rise");
+
+    }
+
+    public void OnSocketSuccess(){
+        Narrator.clip = WellDoneAudio;
+
+        Narrator.Play();
+
+        THE_TABLE.Play("hide_socket");
+
+        //THE_TABLE.Play("reveal_books");
+        //WellDoneAudio
+    }
+    
 
     // public void SummonedTheBall(){
     //       if (FirstSummoning){
