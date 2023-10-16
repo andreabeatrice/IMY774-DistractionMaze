@@ -13,6 +13,8 @@ public class TableController : MonoBehaviour {
     [SerializeField]
     OriginalPositionCheck OPC;
 
+    public Animator TableAnimator;
+
     // Start is called before the first frame update
     void Start(){
         
@@ -25,5 +27,13 @@ public class TableController : MonoBehaviour {
 
     public void OnRevealSocket(){
         CLOCK.StartNewSecondsCountdown(10);
+    }
+
+    public void OnHideSocket(){
+        TableAnimator.Play("book_tray_rise");
+    }
+
+    public void SetBookTimer(){
+        CLOCK.StartNewMinutesCountdown(3, 0);
     }
 }
