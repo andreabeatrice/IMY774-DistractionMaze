@@ -16,6 +16,7 @@ public class SnapObject : MonoBehaviour {
     void Start()
     {
         grabbed = false;
+        isSnapped= false;
     }
 
     // Update is called once per frame
@@ -23,14 +24,12 @@ public class SnapObject : MonoBehaviour {
     {
         objectSnapped = SnapLocation.GetComponent<SnapLocation>().snapped;
 
-        if (objectSnapped == true) {
-            GetComponent<Rigidbody>().isKinematic = true;
-            isSnapped = true;
-        }
-
-        if (objectSnapped == false && grabbed == false) {
+        if(objectSnapped == false){
             GetComponent<Rigidbody>().isKinematic = false;
-
+        }
+        else if (objectSnapped == true && grabbed == false) {
+            GetComponent<Rigidbody>().isKinematic = true;
+            
         }
     }
 

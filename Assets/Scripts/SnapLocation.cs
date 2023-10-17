@@ -7,7 +7,7 @@ public class SnapLocation : MonoBehaviour
 
     private bool grabbed;
 
-    private bool insideSnapZone;
+    public bool insideSnapZone;
 
     public bool snapped;
 
@@ -17,7 +17,8 @@ public class SnapLocation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        insideSnapZone = false;
+        snapped=false;
     }
 
     // Update is called once per frame
@@ -25,18 +26,24 @@ public class SnapLocation : MonoBehaviour
     {
         grabbed = Book.GetComponent<SnapObject>().GetGrabbed();
         SnapObject();
-        insideSnapZone = false;
+        //
     }
 
     private void OnTriggerEnter(Collider other){
+        Debug.Log(other.gameObject.name);
 
-        insideSnapZone = true;
+        if (other.gameObject.name.Contains("(Book)")){
+            insideSnapZone = true;
+        }
+
+        
         
     }
     
     private void OnTriggerExit(Collider other){
 
         insideSnapZone = false;
+        snapped=false;
         
     }
 
