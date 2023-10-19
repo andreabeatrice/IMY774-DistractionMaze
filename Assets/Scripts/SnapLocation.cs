@@ -30,9 +30,9 @@ public class SnapLocation : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        Debug.Log(other.gameObject.name);
+        Debug.Log(Book.GetComponent<SnapObject>().GetGrabbed());
 
-        if (other.gameObject.name.Contains("(Book)")){
+        if (other.gameObject.name == Book.name){
             insideSnapZone = true;
         }
 
@@ -41,10 +41,9 @@ public class SnapLocation : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other){
+            insideSnapZone = false;
+            snapped=false;
 
-        insideSnapZone = false;
-        snapped=false;
-        
     }
 
     void SnapObject(){

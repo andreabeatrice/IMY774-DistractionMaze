@@ -10,7 +10,8 @@ public class SnapObject : MonoBehaviour {
 
     private bool objectSnapped;
 
-    private bool grabbed; 
+    public bool grabbed; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class SnapObject : MonoBehaviour {
         if(objectSnapped == false){
             GetComponent<Rigidbody>().isKinematic = false;
         }
-        else if (objectSnapped == true && grabbed == false) {
+        if (objectSnapped == true && grabbed == false) {
             GetComponent<Rigidbody>().isKinematic = true;
             
         }
@@ -36,8 +37,10 @@ public class SnapObject : MonoBehaviour {
     public void SetGrabbed(bool g){
         grabbed = g;
     }
+    
 
     public bool GetGrabbed(){
         return grabbed;
     }
+
 }

@@ -13,6 +13,8 @@ public class TableController : MonoBehaviour {
     [SerializeField]
     OriginalPositionCheck OPC;
 
+    public GameObject SNAPPING_POSITIONS, BOOKS;
+
     public Animator TableAnimator;
 
     // Start is called before the first frame update
