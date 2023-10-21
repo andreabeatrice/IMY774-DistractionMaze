@@ -633,6 +633,7 @@ MonoBehaviour:
   GLOBAL_CONTROL: {fileID: 987446684}
   CLOCK: {fileID: 7868555544286540987}
   OPC: {fileID: 682761164}
+  NARRATOR: {fileID: 0}
   SNAPPING_POSITIONS: {fileID: 1003877606}
   BOOKS:
   - {fileID: 797789986}
@@ -6922,7 +6923,9 @@ MonoBehaviour:
   ThatTookLongAudio: {fileID: 8300000, guid: fdd2306b8a4859f40b7954d2764ddda2, type: 3}
   PleaseReturnAudio: {fileID: 8300000, guid: 2d74b6a5cc3998f4d93de270f969a76e, type: 3}
   SocketAudio: {fileID: 8300000, guid: 8b392dbba060f1c46a401e260a65ab85, type: 3}
-  WellDoneAudio: {fileID: 0}
+  WellDoneAudio: {fileID: 8300000, guid: c2ad0c2eb7454224e85b68dce72e7629, type: 3}
+  YouWillBeTimed: {fileID: 8300000, guid: bcf91107ff2c9294ab0dfe66a40d2b1b, type: 3}
+  BookInstructions: {fileID: 8300000, guid: 74bc5efd276c64e4d819e7252344220f, type: 3}
 --- !u!4 &987446682
 Transform:
   m_ObjectHideFlags: 0

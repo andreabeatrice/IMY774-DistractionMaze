@@ -13,6 +13,9 @@ public class TableController : MonoBehaviour {
     [SerializeField]
     OriginalPositionCheck OPC;
 
+    [SerializeField]
+    NarratorController NARRATOR;
+
     public GameObject SNAPPING_POSITIONS;
 
     public GameObject[] BOOKS;
@@ -35,9 +38,11 @@ public class TableController : MonoBehaviour {
 
     public void OnHideSocket(){
         TableAnimator.Play("book_tray_rise");
+        NARRATOR.OnBookReveal();
     }
 
     public void SetBookTimer(){
+        NARRATOR.BookOrganizingInstructions();
         SNAPPING_POSITIONS.SetActive(true);
         CLOCK.StartNewMinutesCountdown(3, 0);
     }

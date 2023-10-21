@@ -22,7 +22,7 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     OriginalPositionCheck OPC;
 
-    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio;
+    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions;
 
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
@@ -188,6 +188,18 @@ public class NarratorController : MonoBehaviour{
 
         //THE_TABLE.Play("reveal_books");
         //WellDoneAudio
+    }
+
+    public void OnBookReveal(){
+        Narrator.clip = YouWillBeTimed;
+
+        Narrator.Play();
+    }
+
+    public void BookOrganizingInstructions(){
+        Narrator.clip = BookInstructions;
+        Narrator.Play();
+
     }
     
 

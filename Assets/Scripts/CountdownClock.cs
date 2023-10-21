@@ -89,6 +89,7 @@ public class CountdownClock : MonoBehaviour
 
         firstTwoDigits.color = new Color32(255, 255, 255, 255);
         secondTwoDigits.color = new Color32(255, 255, 255, 255);
+        divider.color = new Color32(255, 255, 255, 255);
 
         
         if (TimeToGoFirstDigits < 10) {
