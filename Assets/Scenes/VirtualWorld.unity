@@ -6848,6 +6848,7 @@ MonoBehaviour:
   BookInstructions: {fileID: 8300000, guid: 74bc5efd276c64e4d819e7252344220f, type: 3}
   ByColorResponseAudio: {fileID: 8300000, guid: c52f2f89318786142b6bfd1b5dec30ab,
     type: 3}
+  FaultyGravityExcuse: {fileID: 8300000, guid: e0326d364f111f945acf3ba21aae05e7, type: 3}
 --- !u!4 &987446682
 Transform:
   m_ObjectHideFlags: 0
