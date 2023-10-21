@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnapObject : MonoBehaviour {
+public class SnapObjectDuplicate : MonoBehaviour {
     
     public GameObject SnapLocation, CorrespondingSnapPosition;
 

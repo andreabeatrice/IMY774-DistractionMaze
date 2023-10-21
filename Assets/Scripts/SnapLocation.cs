@@ -13,7 +13,8 @@ public class SnapLocation : MonoBehaviour
 
     public GameObject Book;
 
-    public GameObject SnapRotationReference;
+    public GameObject SnapRotationReference, CorrespondingSnapPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +26,20 @@ public class SnapLocation : MonoBehaviour
     void Update()
     {
         grabbed = Book.GetComponent<SnapObject>().GetGrabbed();
+
         SnapObject();
+
+        if (snapped){
+            CorrespondingSnapPosition.SetActive(false);
+        }
+        else {
+            CorrespondingSnapPosition.SetActive(true);
+        }
         //
     }
 
     private void OnTriggerEnter(Collider other){
-        Debug.Log(Book.GetComponent<SnapObject>().GetGrabbed());
+        //Debug.Log(Book.GetComponent<SnapObject>().GetGrabbed());
 
         if (other.gameObject.name == Book.name){
             insideSnapZone = true;
@@ -41,13 +50,15 @@ public class SnapLocation : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other){
+        if (other.gameObject.name == Book.name){
             insideSnapZone = false;
             snapped=false;
+        }
 
     }
 
     void SnapObject(){
-        if (grabbed == false && insideSnapZone == true){
+        if (insideSnapZone == true){
             Book.gameObject.transform.position = transform.position;
 
             Book.gameObject.transform.rotation = SnapRotationReference.transform.rotation;
