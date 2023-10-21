@@ -11,6 +11,9 @@ public class BookSnapTracker : MonoBehaviour
     public bool sortDetermined;
 
     public GameObject SnappingThings;
+
+    [SerializeField]
+    NarratorController NARRATOR;
     // Start is called before the first frame update
     void Start()
     {
@@ -83,15 +86,14 @@ public class BookSnapTracker : MonoBehaviour
         }
         else {
             Debug.Log("Sorted by color");
+            NARRATOR.OrganizedByColourResponse();
             foreach(GameObject go in SnapByColorPositions){
                 go.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
 
         foreach(GameObject go in Books){
-            go.GetComponent<SnapObject>().enabled = false;
-            go.GetComponent<SnapObjectDuplicate>().enabled = false;
-            go.GetComponent<Rigidbody>().isKinematic = true;
+            go.GetComponent<BoxCollider>().enabled = false;
         }
 
         //SnappingThings.SetActive(false);

@@ -42,7 +42,6 @@ public class TableController : MonoBehaviour {
     }
 
     public void SetBookTimer(){
-        NARRATOR.BookOrganizingInstructions();
         SNAPPING_POSITIONS.SetActive(true);
         CLOCK.StartNewMinutesCountdown(3, 0);
     }

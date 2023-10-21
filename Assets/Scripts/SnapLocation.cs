@@ -50,8 +50,11 @@ public class SnapLocation : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other){
+        Debug.Log(other.gameObject.name);
+       // if (other.gameObject.name == Book.name){
             insideSnapZone = false;
             snapped=false;
+        //}
 
     }
 
@@ -61,6 +64,7 @@ public class SnapLocation : MonoBehaviour
 
             Book.gameObject.transform.rotation = SnapRotationReference.transform.rotation;
             snapped = true;
+            CorrespondingSnapPosition.SetActive(false);
         }
     }
 }
