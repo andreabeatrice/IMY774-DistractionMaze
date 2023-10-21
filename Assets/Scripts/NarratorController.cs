@@ -22,7 +22,7 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     OriginalPositionCheck OPC;
 
-    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio;
+    public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
@@ -203,11 +203,19 @@ public class NarratorController : MonoBehaviour{
 
         Narrator.clip = BookInstructions;
         Narrator.Play();
+        StartCoroutine(Warning());
 
     }
 
     public void OrganizedByColourResponse(){
         Narrator.clip = ByColorResponseAudio;
+        Narrator.Play();
+    }
+
+    public IEnumerator Warning(){
+        yield return new WaitForSeconds(11f);
+
+        Narrator.clip = FaultyGravityExcuse;
         Narrator.Play();
     }
     
