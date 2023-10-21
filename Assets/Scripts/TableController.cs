@@ -13,7 +13,9 @@ public class TableController : MonoBehaviour {
     [SerializeField]
     OriginalPositionCheck OPC;
 
-    public GameObject SNAPPING_POSITIONS, BOOKS;
+    public GameObject SNAPPING_POSITIONS;
+
+    public GameObject[] BOOKS;
 
     public Animator TableAnimator;
 
@@ -36,6 +38,13 @@ public class TableController : MonoBehaviour {
     }
 
     public void SetBookTimer(){
+        SNAPPING_POSITIONS.SetActive(true);
         CLOCK.StartNewMinutesCountdown(3, 0);
+    }
+
+    public void EnableBooks(){
+        foreach(GameObject go in BOOKS){
+            go.SetActive(true);
+        }
     }
 }
