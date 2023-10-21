@@ -50,10 +50,8 @@ public class SnapLocation : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other){
-        if (other.gameObject.name == Book.name){
             insideSnapZone = false;
             snapped=false;
-        }
 
     }
 

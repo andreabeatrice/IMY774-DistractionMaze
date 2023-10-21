@@ -24,6 +24,8 @@ public class BallTracker : MonoBehaviour
 
             THE_BALL.transform.position = new Vector3(-2.053f, 0.458f, 1.201f);
 
+            THE_BALL.SetActive(true);
+
             THE_TABLE.Play("new_ball");
         }
     }
