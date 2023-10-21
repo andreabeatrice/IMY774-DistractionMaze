@@ -42,7 +42,7 @@ public class BookSnapTracker : MonoBehaviour
 
             if (counter == 10){
                 AllColorPositionsFalse = true;
-                OnSorted();
+                StartCoroutine(OnSorted());
             }
             else {
                 counter = 0;
@@ -55,7 +55,7 @@ public class BookSnapTracker : MonoBehaviour
 
                 if (counter == 10){
                     AllHeightPositionsFalse = true;
-                    OnSorted();
+                    StartCoroutine(OnSorted());
                 }
             }
 
@@ -65,7 +65,7 @@ public class BookSnapTracker : MonoBehaviour
         }
         else {
             if (!sortDetermined){
-                OnSorted();
+                StartCoroutine(OnSorted());
             }
             
 
@@ -73,7 +73,10 @@ public class BookSnapTracker : MonoBehaviour
 
     }
 
-    public void OnSorted(){
+    public IEnumerator OnSorted(){
+
+        yield return new WaitForSeconds(1);
+
         sortDetermined = true;
         if (AllColorPositionsFalse) {
             Debug.Log("Sorted by height");

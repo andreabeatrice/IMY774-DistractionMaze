@@ -725,13 +725,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113143685}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2253, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138289617
 GameObject:
@@ -748,7 +748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &138289618
 Transform:
   m_ObjectHideFlags: 0
@@ -756,8 +756,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138289617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.251, y: 1.1, z: 0.999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.025699854, y: 0.100000024, z: -0.027800024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -771,8 +771,8 @@ Transform:
   - {fileID: 306325265}
   - {fileID: 1981692204}
   - {fileID: 1980842051}
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1003877607}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &143330689
 PrefabInstance:
@@ -1188,13 +1188,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217904978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3701, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.14479995, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &224423937
 GameObject:
@@ -1481,7 +1481,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.010999978
+      value: -0.0138
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -1567,7 +1567,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1659992719}
   SnapRotationReference: {fileID: 306325262}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 937400089}
 --- !u!65 &306325264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2301,13 +2301,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407892925}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6048, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3794999, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &416372227
 PrefabInstance:
@@ -2621,13 +2621,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473285884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5093, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.28399992, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508052808
 GameObject:
@@ -3093,7 +3093,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19300008
+      value: -0.1873
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -3103,7 +3103,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.030000031
+      value: -0.046
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -3208,7 +3208,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1590233848}
   SnapRotationReference: {fileID: 541340767}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1601607089}
 --- !u!1001 &549762171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3328,7 +3328,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.01880002
+      value: 0.0002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -3433,7 +3433,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 953356000}
   SnapRotationReference: {fileID: 564689897}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1778269767}
 --- !u!43 &578228475
 Mesh:
   m_ObjectHideFlags: 0
@@ -4179,7 +4179,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -4282,69 +4282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1227614541}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1981692201}
   grabbed: 0
---- !u!114 &644213992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644213990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 644213991}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 644213991}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &644213993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4476,6 +4415,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 644213999}
+--- !u!114 &644214006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644213990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1981692201}
+  CorrespondingSnapPosition: {fileID: 1227614541}
+  grabbed: 0
 --- !u!1001 &646984145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5080,7 +5034,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -5183,69 +5137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1129813363}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1916309714}
   grabbed: 0
---- !u!114 &737600345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737600343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 737600344}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 737600344}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &737600346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5377,6 +5270,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 737600352}
+--- !u!114 &737600359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737600343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1916309714}
+  CorrespondingSnapPosition: {fileID: 1129813363}
+  grabbed: 0
 --- !u!1001 &797789984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5387,7 +5295,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -5595,67 +5503,6 @@ MonoBehaviour:
   _grabbable: {fileID: 797789989}
   _rigidbody: {fileID: 797789988}
   _scaleMassWithSize: 1
---- !u!114 &797789994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797789986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 797789995}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 797789995}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &797789995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5669,7 +5516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 900290828}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1856933315}
   grabbed: 0
 --- !u!114 &797789998
 MonoBehaviour:
@@ -5684,6 +5531,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 797789987}
+--- !u!114 &797790002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797789986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1856933315}
+  CorrespondingSnapPosition: {fileID: 900290828}
+  grabbed: 0
 --- !u!1 &804574739
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,13 +5635,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804574739}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2733002, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.048000097, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &876077727
 PrefabInstance:
@@ -6119,7 +5981,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0184
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -6224,7 +6086,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 797789986}
   SnapRotationReference: {fileID: 900290828}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1856933315}
 --- !u!1001 &905382311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6396,7 +6258,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10000014
+      value: -0.0918
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -6406,7 +6268,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0069999695
+      value: -0.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -6511,7 +6373,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1659992719}
   SnapRotationReference: {fileID: 937400089}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 306325262}
 --- !u!1001 &953355998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6522,7 +6384,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -6625,69 +6487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 564689897}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1778269767}
   grabbed: 0
---- !u!114 &953356002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953356000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 953356001}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 953356001}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &953356003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6819,6 +6620,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 953356009}
+--- !u!114 &953356016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953356000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1778269767}
+  CorrespondingSnapPosition: {fileID: 564689897}
+  grabbed: 0
 --- !u!4 &955524695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 416390, guid: c76d2d3504ddb4847940a815cad04644,
@@ -7034,6 +6850,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testing: 1
+--- !u!1 &1003877606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003877607}
+  - component: {fileID: 1003877608}
+  m_Layer: 0
+  m_Name: Snapping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003877607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003877606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2253, y: 1, z: 1.0268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1544530717}
+  - {fileID: 138289618}
+  - {fileID: 1514563911}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003877608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003877606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c91807fa5332b24bae886a9932866c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapByColorPositions:
+  - {fileID: 900290828}
+  - {fileID: 564689897}
+  - {fileID: 1598861354}
+  - {fileID: 1673439714}
+  - {fileID: 1129813363}
+  - {fileID: 541340767}
+  - {fileID: 1579911515}
+  - {fileID: 937400089}
+  - {fileID: 1227614541}
+  - {fileID: 1500676145}
+  SnapByHeightPositions:
+  - {fileID: 1856933315}
+  - {fileID: 1778269767}
+  - {fileID: 1531706688}
+  - {fileID: 1351225518}
+  - {fileID: 1916309714}
+  - {fileID: 1601607089}
+  - {fileID: 1527215017}
+  - {fileID: 306325262}
+  - {fileID: 1981692201}
+  - {fileID: 1980842048}
+  Books:
+  - {fileID: 797789986}
+  - {fileID: 953356000}
+  - {fileID: 1432053310}
+  - {fileID: 1149241797}
+  - {fileID: 737600343}
+  - {fileID: 1590233848}
+  - {fileID: 1659840508}
+  - {fileID: 1659992719}
+  - {fileID: 644213990}
+  - {fileID: 1952915437}
+  AllColorPositionsFalse: 0
+  AllHeightPositionsFalse: 0
+  sortDetermined: 0
+  SnappingThings: {fileID: 0}
 --- !u!1001 &1041227477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7603,7 +7503,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.009000003
+      value: -0.0283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -7708,7 +7608,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 737600343}
   SnapRotationReference: {fileID: 1129813363}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1916309714}
 --- !u!1 &1137143011
 GameObject:
   m_ObjectHideFlags: 0
@@ -7833,7 +7733,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -7936,69 +7836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1673439714}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1351225518}
   grabbed: 0
---- !u!114 &1149241799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149241797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1149241798}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1149241798}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1149241800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8130,6 +7969,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 1149241806}
+--- !u!114 &1149241813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149241797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1351225518}
+  CorrespondingSnapPosition: {fileID: 1673439714}
+  grabbed: 0
 --- !u!1001 &1152534280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8466,7 +8320,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.052999973
+      value: -0.045
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -8476,7 +8330,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0039999485
+      value: -0.0165
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -8581,7 +8435,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 644213990}
   SnapRotationReference: {fileID: 1227614541}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1981692201}
 --- !u!114 &1228046393 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1739767371118133675, guid: 8b13b070429a7684eb2c1ae2367ad765,
@@ -8883,13 +8737,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313096564}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3221, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.09679985, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1315936572
 GameObject:
@@ -9102,7 +8956,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -9112,7 +8966,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.013
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -9198,7 +9052,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1149241797}
   SnapRotationReference: {fileID: 1351225518}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1673439714}
 --- !u!65 &1351225520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9228,7 +9082,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -9331,69 +9185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1598861354}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1531706688}
   grabbed: 0
---- !u!114 &1432053312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432053310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1432053311}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1432053311}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1432053313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9525,6 +9318,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 1432053319}
+--- !u!114 &1432053326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432053310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1531706688}
+  CorrespondingSnapPosition: {fileID: 1598861354}
+  grabbed: 0
 --- !u!1 &1441374392
 GameObject:
   m_ObjectHideFlags: 0
@@ -9614,13 +9422,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441374392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6528, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4275, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1452013340 stripped
 GameObject:
@@ -9896,7 +9704,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0035
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -9906,7 +9714,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0166
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10011,7 +9819,48 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1952915437}
   SnapRotationReference: {fileID: 1500676145}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1980842048}
+--- !u!1 &1514563910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1514563911}
+  m_Layer: 0
+  m_Name: Position Markers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1514563911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514563910}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1441374396}
+  - {fileID: 407892929}
+  - {fileID: 1998124627}
+  - {fileID: 473285888}
+  - {fileID: 1887860351}
+  - {fileID: 2034983699}
+  - {fileID: 217904982}
+  - {fileID: 1313096568}
+  - {fileID: 804574743}
+  - {fileID: 113143689}
+  m_Father: {fileID: 1003877607}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1516188844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10307,7 +10156,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.007000029
+      value: -0.0129
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10393,7 +10242,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1659840508}
   SnapRotationReference: {fileID: 1527215017}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1579911515}
 --- !u!65 &1527215019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10443,7 +10292,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.23740005
+      value: -0.236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10453,7 +10302,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.004000008
+      value: -0.011
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10539,7 +10388,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1432053310}
   SnapRotationReference: {fileID: 1531706688}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1598861354}
 --- !u!65 &1531706690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10582,8 +10431,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544530716}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2505002, y: 1.147, z: 1.003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.025200129, y: 0.14699996, z: -0.023800015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10597,8 +10446,8 @@ Transform:
   - {fileID: 937400090}
   - {fileID: 1227614542}
   - {fileID: 1500676146}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1003877607}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559035170
 GameObject:
@@ -10756,7 +10605,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14499998
+      value: -0.1418
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10766,7 +10615,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.003000021
+      value: -0.0152
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10871,7 +10720,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1659840508}
   SnapRotationReference: {fileID: 1579911515}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1527215017}
 --- !u!1001 &1590233846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10882,7 +10731,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10985,69 +10834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 541340767}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1601607089}
   grabbed: 0
---- !u!114 &1590233850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590233848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1590233849}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1590233849}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1590233851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11179,6 +10967,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 1590233857}
+--- !u!114 &1590233864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590233848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1601607089}
+  CorrespondingSnapPosition: {fileID: 541340767}
+  grabbed: 0
 --- !u!1001 &1598861353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11219,7 +11022,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11324,7 +11127,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1432053310}
   SnapRotationReference: {fileID: 1598861354}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1531706688}
 --- !u!1001 &1601607088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11355,7 +11158,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05040002
+      value: -0.042
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11365,7 +11168,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.026000023
+      value: -0.0408
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11451,7 +11254,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1590233848}
   SnapRotationReference: {fileID: 1601607089}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 541340767}
 --- !u!65 &1601607091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11595,7 +11398,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11698,69 +11501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1579911515}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1527215017}
   grabbed: 0
---- !u!114 &1659840510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659840508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659840509}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659840509}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1659840511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11892,6 +11634,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 1659840517}
+--- !u!114 &1659840524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659840508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1527215017}
+  CorrespondingSnapPosition: {fileID: 1579911515}
+  grabbed: 0
 --- !u!1001 &1659992717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11902,7 +11659,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11992,67 +11749,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1659992717}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1659992721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659992719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659992734}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659992734}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1659992722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12197,7 +11893,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 937400089}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 306325262}
+  grabbed: 0
+--- !u!114 &1659992739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659992719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 306325262}
+  CorrespondingSnapPosition: {fileID: 937400089}
   grabbed: 0
 --- !u!1 &1662698876
 GameObject:
@@ -12471,7 +12182,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.004000008
+      value: -0.0165
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -12576,7 +12287,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1149241797}
   SnapRotationReference: {fileID: 1673439714}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1351225518}
 --- !u!1 &1698690157
 GameObject:
   m_ObjectHideFlags: 0
@@ -13534,7 +13245,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.022800028
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -13620,7 +13331,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 953356000}
   SnapRotationReference: {fileID: 1778269767}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 564689897}
 --- !u!65 &1778269769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16258,7 +15969,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14680004
+      value: -0.139
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -16268,7 +15979,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.004000008
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -16354,7 +16065,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 797789986}
   SnapRotationReference: {fileID: 1856933315}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 900290828}
 --- !u!65 &1856933317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16463,13 +16174,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887860347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4639, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.23860002, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1889692561 stripped
 MonoBehaviour:
@@ -16600,7 +16311,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09800005
+      value: -0.0915
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -16610,7 +16321,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.004999995
+      value: -0.0269
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -16696,7 +16407,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 737600343}
   SnapRotationReference: {fileID: 1916309714}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1129813363}
 --- !u!65 &1916309716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16805,7 +16516,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -16908,69 +16619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1500676145}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1980842048}
   grabbed: 0
---- !u!114 &1952915439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952915437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
-  _whenHover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenUnselect:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1952915438}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-  _whenInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1952915438}
-        m_TargetAssemblyTypeName: SnapObject, Assembly-CSharp
-        m_MethodName: SetGrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  _whenSelectingInteractorViewAdded:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelectingInteractorViewRemoved:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1952915440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17102,6 +16752,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 1952915446}
+--- !u!114 &1952915453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952915437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334879726e8f71c4b808b914d977899e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapLocation: {fileID: 1980842048}
+  CorrespondingSnapPosition: {fileID: 1500676145}
+  grabbed: 0
 --- !u!1 &1972126201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7192818547691322728, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -17204,7 +16869,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.37849998
+      value: -0.3754
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -17214,7 +16879,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.004000008
+      value: -0.0143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -17300,7 +16965,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 1952915437}
   SnapRotationReference: {fileID: 1980842048}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1500676145}
 --- !u!65 &1980842050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17350,7 +17015,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19230008
+      value: -0.1877
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -17360,7 +17025,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.007999957
+      value: -0.0125
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -17446,7 +17111,7 @@ MonoBehaviour:
   snapped: 0
   Book: {fileID: 644213990}
   SnapRotationReference: {fileID: 1981692201}
-  CorrespondingSnapPosition: {fileID: 0}
+  CorrespondingSnapPosition: {fileID: 1227614541}
 --- !u!65 &1981692203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17628,13 +17293,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998124623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5573, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.33200002, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2016047804
 PrefabInstance:
@@ -18070,13 +17735,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034983695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4176, y: 1, z: 1.0268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.19229984, y: 0, z: 0}
   m_LocalScale: {x: 0.042521294, y: 0.003140625, z: 0.25375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 1514563911}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2063454483 stripped
 Transform:
