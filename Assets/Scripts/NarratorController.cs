@@ -142,6 +142,8 @@ public class NarratorController : MonoBehaviour{
     }
 
     public void ThatTookLong(){
+        StopAllCoroutines();
+        
         Narrator.clip = ThatTookLongAudio;
 
         Narrator.Play();

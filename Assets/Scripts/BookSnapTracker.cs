@@ -87,15 +87,33 @@ public class BookSnapTracker : MonoBehaviour
         else {
             Debug.Log("Sorted by color");
             NARRATOR.OrganizedByColourResponse();
-            foreach(GameObject go in SnapByColorPositions){
-                go.GetComponent<Rigidbody>().isKinematic = false;
-            }
+        }
+
+        StartCoroutine(NextDistraction());
+
+        //SnappingThings.SetActive(false);
+    }
+
+    public IEnumerator NextDistraction(){
+        yield return new WaitForSeconds(3);
+
+        foreach(GameObject go in SnapByColorPositions){
+            go.SetActive(false);
+        }
+
+        foreach(GameObject go in SnapByColorPositions){
+            go.SetActive(false);
+        }
+
+        foreach(GameObject go in SnapByHeightPositions){
+            go.SetActive(false);
         }
 
         foreach(GameObject go in Books){
-            go.GetComponent<BoxCollider>().enabled = false;
+            go.GetComponent<Rigidbody>().useGravity = false;
+            go.GetComponent<Rigidbody>().isKinematic = false;
         }
 
-        //SnappingThings.SetActive(false);
+
     }
 }
