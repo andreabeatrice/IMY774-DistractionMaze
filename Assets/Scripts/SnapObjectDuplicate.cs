@@ -6,7 +6,7 @@ public class SnapObjectDuplicate : MonoBehaviour {
     
     public GameObject SnapLocation, CorrespondingSnapPosition;
 
-    private bool objectSnapped;
+    public bool objectSnapped;
 
     public bool grabbed; 
 

@@ -5158,6 +5158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1227614541}
   CorrespondingSnapPosition: {fileID: 1981692201}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &644213993
 MonoBehaviour:
@@ -5304,6 +5305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1981692201}
   CorrespondingSnapPosition: {fileID: 1227614541}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &644214010
 MonoBehaviour:
@@ -6033,6 +6035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1129813363}
   CorrespondingSnapPosition: {fileID: 1916309714}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &737600346
 MonoBehaviour:
@@ -6179,6 +6182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1916309714}
   CorrespondingSnapPosition: {fileID: 1129813363}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &737600363
 MonoBehaviour:
@@ -6432,6 +6436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 900290828}
   CorrespondingSnapPosition: {fileID: 1856933315}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &797789998
 MonoBehaviour:
@@ -6460,6 +6465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1856933315}
   CorrespondingSnapPosition: {fileID: 900290828}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &797790006
 MonoBehaviour:
@@ -7821,6 +7827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 564689897}
   CorrespondingSnapPosition: {fileID: 1778269767}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &953356003
 MonoBehaviour:
@@ -7967,6 +7974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1778269767}
   CorrespondingSnapPosition: {fileID: 564689897}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &953356020
 MonoBehaviour:
@@ -8229,6 +8237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 106611340}
+  BookSnapTracker: {fileID: 1003877606}
   cam: {fileID: 1972126206}
   RedBook: {fileID: 797789986}
   OrangeBook: {fileID: 953356000}
@@ -8240,6 +8249,28 @@ MonoBehaviour:
   PurpleBook: {fileID: 1659992719}
   PinkPurpleBook: {fileID: 644213990}
   PinkBook: {fileID: 1952915437}
+  SnapPositionsByColor:
+  - {fileID: 900290828}
+  - {fileID: 564689897}
+  - {fileID: 1598861354}
+  - {fileID: 1673439714}
+  - {fileID: 1129813363}
+  - {fileID: 541340767}
+  - {fileID: 1579911515}
+  - {fileID: 937400089}
+  - {fileID: 1227614541}
+  - {fileID: 1500676145}
+  SnapPositionsByHeight:
+  - {fileID: 306325262}
+  - {fileID: 1980842048}
+  - {fileID: 1778269767}
+  - {fileID: 1527215017}
+  - {fileID: 1531706688}
+  - {fileID: 1981692201}
+  - {fileID: 1856933315}
+  - {fileID: 1916309714}
+  - {fileID: 1601607089}
+  - {fileID: 1351225518}
   FirstTimeLookAway: 1
   NARRATOR: {fileID: 987446681}
 --- !u!1 &1003877606
@@ -8326,6 +8357,7 @@ MonoBehaviour:
   AllHeightPositionsFalse: 0
   sortDetermined: 0
   VisibleSlots: {fileID: 1514563910}
+  ME: {fileID: 1003877606}
   NARRATOR: {fileID: 987446681}
   GLOBAL_CONTROL: {fileID: 987446684}
 --- !u!1001 &1041227477
@@ -8577,17 +8609,17 @@ PrefabInstance:
     - target: {fileID: 463835053371953216, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.593
+      value: -2.549
       objectReference: {fileID: 0}
     - target: {fileID: 463835053371953216, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.291
+      value: 0.595
       objectReference: {fileID: 0}
     - target: {fileID: 463835053371953216, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.973
+      value: 0.991
       objectReference: {fileID: 0}
     - target: {fileID: 463835053371953216, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3,
         type: 3}
@@ -9671,6 +9703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1673439714}
   CorrespondingSnapPosition: {fileID: 1351225518}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1149241800
 MonoBehaviour:
@@ -9817,6 +9850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1351225518}
   CorrespondingSnapPosition: {fileID: 1673439714}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1149241817
 MonoBehaviour:
@@ -11050,6 +11084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1598861354}
   CorrespondingSnapPosition: {fileID: 1531706688}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1432053313
 MonoBehaviour:
@@ -11196,6 +11231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1531706688}
   CorrespondingSnapPosition: {fileID: 1598861354}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1432053330
 MonoBehaviour:
@@ -13949,6 +13985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 541340767}
   CorrespondingSnapPosition: {fileID: 1601607089}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1590233851
 MonoBehaviour:
@@ -14095,6 +14132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1601607089}
   CorrespondingSnapPosition: {fileID: 541340767}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1590233868
 MonoBehaviour:
@@ -14646,6 +14684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1579911515}
   CorrespondingSnapPosition: {fileID: 1527215017}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1659840511
 MonoBehaviour:
@@ -14792,6 +14831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1527215017}
   CorrespondingSnapPosition: {fileID: 1579911515}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1659840528
 MonoBehaviour:
@@ -15058,6 +15098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 937400089}
   CorrespondingSnapPosition: {fileID: 306325262}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1659992739
 MonoBehaviour:
@@ -15073,6 +15114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 306325262}
   CorrespondingSnapPosition: {fileID: 937400089}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1659992743
 MonoBehaviour:
@@ -19892,7 +19934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946107267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.008, y: 0.438, z: 1.207}
+  m_LocalPosition: {x: -2.008, y: 0.787, z: 1.207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20024,6 +20066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1500676145}
   CorrespondingSnapPosition: {fileID: 1980842048}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1952915440
 MonoBehaviour:
@@ -20170,6 +20213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnapLocation: {fileID: 1980842048}
   CorrespondingSnapPosition: {fileID: 1500676145}
+  objectSnapped: 0
   grabbed: 0
 --- !u!114 &1952915457
 MonoBehaviour:

@@ -11,7 +11,7 @@ public class BookSnapTracker : MonoBehaviour
 
     public bool sortDetermined;
 
-    public GameObject VisibleSlots;
+    public GameObject VisibleSlots, ME;
 
     [SerializeField]
     NarratorController NARRATOR;
@@ -88,7 +88,7 @@ public class BookSnapTracker : MonoBehaviour
 
     public IEnumerator OnSorted(){
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
 
         sortDetermined = true;
         if (AllColorPositionsFalse) {
@@ -106,7 +106,7 @@ public class BookSnapTracker : MonoBehaviour
     }
 
     public IEnumerator NextDistraction(){
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
 
         VisibleSlots.SetActive(false);
 
@@ -130,6 +130,8 @@ public class BookSnapTracker : MonoBehaviour
         }
 
         NARRATOR.BrokenGravity();
+
+        ME.SetActive(false);
 
     }
 }
