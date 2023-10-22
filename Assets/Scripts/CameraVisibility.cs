@@ -51,7 +51,7 @@ public class CameraVisibility : MonoBehaviour
         {
 
 
-           if (RedBook.activeSelf && RedBook.GetComponent<SnapObject>().enabled == true){
+           if (RedBook.activeSelf){
                 if (FirstTimeLookAway){
                     FirstTimeLookAway = false;
                     Narrator.clip = FocusUp;

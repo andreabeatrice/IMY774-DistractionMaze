@@ -17,6 +17,9 @@ public class NarratorController : MonoBehaviour{
     private AudioSource Narrator;
 
     [SerializeField]
+    private RandomSparking FUSE_BOX;
+
+    [SerializeField]
     GameObject DistanceInteractorLeft, DistanceInteractorRight;
 
     [SerializeField]
@@ -207,6 +210,8 @@ public class NarratorController : MonoBehaviour{
 
         Narrator.clip = BookInstructions;
         Narrator.Play();
+
+        FUSE_BOX.StartSparking();
 
     }
 
