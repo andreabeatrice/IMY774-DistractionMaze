@@ -207,7 +207,6 @@ public class NarratorController : MonoBehaviour{
 
         Narrator.clip = BookInstructions;
         Narrator.Play();
-        StartCoroutine(Warning());
 
     }
 
@@ -221,12 +220,6 @@ public class NarratorController : MonoBehaviour{
         Narrator.Play();
     }
 
-    public IEnumerator Warning(){
-        yield return new WaitForSeconds(11f);
-
-        Narrator.clip = FaultyGravityExcuse;
-        Narrator.Play();
-    }
 
     public void BrokenGravity(){
         Narrator.clip = WeBrokeTheGravityMachine;
@@ -236,7 +229,7 @@ public class NarratorController : MonoBehaviour{
     }
 
     public IEnumerator LogicPuzzle(){
-        yield return new WaitForSeconds(17f);
+        yield return new WaitForSeconds(8f);
 
         THE_TABLE.Play("logic_puzzle_tray_rise");
     }

@@ -9,6 +9,8 @@ public class CameraVisibility : MonoBehaviour
 
     public GameObject RedBook, OrangeBook, OrangeYellowBook, YellowBook, GreenBook, GreenBlueBook, BlueBook, PurpleBook, PinkPurpleBook, PinkBook;
 
+    public bool FirstTimeLookAway;
+
     private bool IsVisible(Camera c, GameObject target)
     {
         var planes = GeometryUtility.CalculateFrustumPlanes(c);
@@ -28,16 +30,27 @@ public class CameraVisibility : MonoBehaviour
     {
         
 
-        var targetRender = target.GetComponent<Renderer>();
-        if (IsVisible(cam,target))
+        var targets = IsVisible(cam,RedBook) || IsVisible(cam,OrangeBook) || IsVisible(cam,OrangeYellowBook) || IsVisible(cam,YellowBook) || IsVisible(cam,GreenBook) || IsVisible(cam,GreenBlueBook) || IsVisible(cam,BlueBook) || IsVisible(cam,PurpleBook) || IsVisible(cam,PinkPurpleBook) || IsVisible(cam,PinkBook);
+
+
+
+        if (targets)
         {
            
         }
         else
         {
-           Debug.Log("Not looking at teable!!!!!!!!!!!!!!");
 
-           if (RedBook.activeSelf){
+
+           if (RedBook.activeSelf && RedBook.GetComponent<SnapObject>().enabled == true){
+                if (FirstTimeLookAway){
+                    FirstTimeLookAway = false;
+
+                    
+                }
+                
+
+
                 RedBook.transform.position = new Vector3(-2.4411f, 1.116f, 1.003f);
                 RedBook.transform.eulerAngles = new Vector3(-90, 0, 90);
 

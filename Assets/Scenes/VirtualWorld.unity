@@ -4351,7 +4351,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.128
+      value: 0.39500007
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -4406,7 +4406,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -4597,44 +4597,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 644213999}
   _colliders:
   - {fileID: 644213999}
---- !u!114 &644214014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644213990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 644213996}
-  _rigidbody: {fileID: 644213998}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1001 &646984145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5264,7 +5226,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1159999
+      value: 0.383
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -5319,7 +5281,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -5510,44 +5472,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 737600352}
   _colliders:
   - {fileID: 737600352}
---- !u!114 &737600367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737600343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 737600349}
-  _rigidbody: {fileID: 737600351}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1001 &797789984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5583,7 +5507,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1159999
+      value: 0.383
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -5638,7 +5562,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -5829,62 +5753,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 797789987}
   _colliders:
   - {fileID: 797789987}
---- !u!114 &797790010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797789986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 797789989}
-  _rigidbody: {fileID: 797789988}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &797790011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797789986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_materialColorField: 
 --- !u!1 &804574739
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,7 +6636,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.142
+      value: 0.409
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -6823,7 +6691,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -7014,44 +6882,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 953356009}
   _colliders:
   - {fileID: 953356009}
---- !u!114 &953356024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953356000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 953356006}
-  _rigidbody: {fileID: 953356008}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!4 &955524695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 416390, guid: c76d2d3504ddb4847940a815cad04644,
@@ -7231,9 +7061,9 @@ MonoBehaviour:
   ByColorResponseAudio: {fileID: 8300000, guid: c52f2f89318786142b6bfd1b5dec30ab,
     type: 3}
   FaultyGravityExcuse: {fileID: 8300000, guid: e0326d364f111f945acf3ba21aae05e7, type: 3}
-  WeBrokeTheGravityMachine: {fileID: 8300000, guid: 9220668dd423d2449a4c6d7846a17c58,
+  WeBrokeTheGravityMachine: {fileID: 8300000, guid: b7f2af67eee4c334e908f3c4c49e945a,
     type: 3}
-  ByHeightResponse: {fileID: 8300000, guid: 850a9550cfb5f1043b07f721586f8308, type: 3}
+  ByHeightResponse: {fileID: 8300000, guid: fbb162cd3b6cc9848abe6c08cd48951b, type: 3}
 --- !u!4 &987446682
 Transform:
   m_ObjectHideFlags: 0
@@ -7275,7 +7105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254668e4f8b03ad49ac74b3eb44d46c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testing: 1
+  testing: 0
 --- !u!114 &987446685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7700,7 +7530,7 @@ PrefabInstance:
     - target: {fileID: 3535473601529558972, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
@@ -7726,20 +7556,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1063561226
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063561224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 53ee823ff543aa24d855d8f9f8c2b87b, type: 3}
 --- !u!95 &1063561227
 Animator:
   serializedVersion: 5
@@ -7891,6 +7707,19 @@ MonoBehaviour:
   volumetricRadius: 5
   reverbSend: 18
   enableRfl: 1
+--- !u!65 &1063561234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063561224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07008484, y: 0.1436833, z: 0.0065494743}
+  m_Center: {x: 1.966021e-11, y: -4.0857883e-11, z: -0.0004716526}
 --- !u!114 &1070340762 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7801126385057255475, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -8535,7 +8364,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.103
+      value: 0.3700001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -8590,7 +8419,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -8781,44 +8610,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1149241806}
   _colliders:
   - {fileID: 1149241806}
---- !u!114 &1149241821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149241797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1149241803}
-  _rigidbody: {fileID: 1149241805}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1001 &1152534280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9600,7 +9391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1315936573
 Transform:
   m_ObjectHideFlags: 0
@@ -9952,7 +9743,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.126
+      value: 0.3930001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -10007,7 +9798,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -10198,44 +9989,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1432053319}
   _colliders:
   - {fileID: 1432053319}
---- !u!114 &1432053334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432053310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1432053316}
-  _rigidbody: {fileID: 1432053318}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1 &1441374392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11679,7 +11432,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.107
+      value: 0.37400004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -11734,7 +11487,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -11925,44 +11678,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1590233857}
   _colliders:
   - {fileID: 1590233857}
---- !u!114 &1590233872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590233848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1590233854}
-  _rigidbody: {fileID: 1590233856}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1001 &1598861353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12414,7 +12129,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.138
+      value: 0.40500006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -12469,7 +12184,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -12660,44 +12375,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1659840517}
   _colliders:
   - {fileID: 1659840517}
---- !u!114 &1659840532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659840508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1659840514}
-  _rigidbody: {fileID: 1659840516}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1001 &1659992717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12733,7 +12410,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1539999
+      value: 0.42099997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -12788,7 +12465,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -12979,44 +12656,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1659992728}
   _colliders:
   - {fileID: 1659992728}
---- !u!114 &1659992747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659992719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1659992725}
-  _rigidbody: {fileID: 1659992727}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1 &1662698876
 GameObject:
   m_ObjectHideFlags: 0
@@ -17584,7 +17223,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.147
+      value: 0.414
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
@@ -17639,7 +17278,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 728331cfabe60804cbe2b2d2f80f5b1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728331cfabe60804cbe2b2d2f80f5b1e, type: 3}
@@ -17830,44 +17469,6 @@ MonoBehaviour:
   _boundsCollider: {fileID: 1952915446}
   _colliders:
   - {fileID: 1952915446}
---- !u!114 &1952915461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952915437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1952915443}
-  _rigidbody: {fileID: 1952915445}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _supportedGrabTypes: 1
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!1 &1972126201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7192818547691322728, guid: f39a9d103c4129b42a53567f6cd8356a,

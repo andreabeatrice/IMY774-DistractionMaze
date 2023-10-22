@@ -88,7 +88,7 @@ public class BookSnapTracker : MonoBehaviour
 
     public IEnumerator OnSorted(){
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
 
         sortDetermined = true;
         if (AllColorPositionsFalse) {
@@ -106,7 +106,7 @@ public class BookSnapTracker : MonoBehaviour
     }
 
     public IEnumerator NextDistraction(){
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(4f);
 
         VisibleSlots.SetActive(false);
 
