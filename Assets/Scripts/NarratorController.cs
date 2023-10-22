@@ -24,6 +24,8 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
+    public AudioClip WeBrokeTheGravityMachine;
+    
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
     // Start is called before the first frame update
@@ -143,7 +145,7 @@ public class NarratorController : MonoBehaviour{
 
     public void ThatTookLong(){
         StopAllCoroutines();
-        
+
         Narrator.clip = ThatTookLongAudio;
 
         Narrator.Play();
@@ -218,6 +220,11 @@ public class NarratorController : MonoBehaviour{
         yield return new WaitForSeconds(11f);
 
         Narrator.clip = FaultyGravityExcuse;
+        Narrator.Play();
+    }
+
+    public void BrokenGravity(){
+        Narrator.clip = WeBrokeTheGravityMachine;
         Narrator.Play();
     }
     

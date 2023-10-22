@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Oculus.Interaction;
 
 public class SnapObject : MonoBehaviour {
     
@@ -9,6 +10,7 @@ public class SnapObject : MonoBehaviour {
     private bool objectSnapped;
 
     public bool grabbed; 
+
 
 
     // Start is called before the first frame update
@@ -21,7 +23,6 @@ public class SnapObject : MonoBehaviour {
     void Update()
     {
         objectSnapped = (SnapLocation.GetComponent<SnapLocation>().snapped || CorrespondingSnapPosition.GetComponent<SnapLocation>().snapped);
-
 
 
         if(objectSnapped == false){

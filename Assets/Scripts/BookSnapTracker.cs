@@ -97,8 +97,9 @@ public class BookSnapTracker : MonoBehaviour
     public IEnumerator NextDistraction(){
         yield return new WaitForSeconds(3);
 
-        foreach(GameObject go in SnapByColorPositions){
-            go.SetActive(false);
+        foreach(GameObject go in Books){
+            go.GetComponent<SnapObject>().enabled = false;
+            go.GetComponent<SnapObjectDuplicate>().enabled = false;
         }
 
         foreach(GameObject go in SnapByColorPositions){
@@ -114,6 +115,7 @@ public class BookSnapTracker : MonoBehaviour
             go.GetComponent<Rigidbody>().isKinematic = false;
         }
 
+        NARRATOR.BrokenGravity();
 
     }
 }
