@@ -11,6 +11,11 @@ public class CameraVisibility : MonoBehaviour
 
     public bool FirstTimeLookAway;
 
+    public AudioClip FocusUp;
+
+    [SerializeField]
+    private AudioSource Narrator;
+
     private bool IsVisible(Camera c, GameObject target)
     {
         var planes = GeometryUtility.CalculateFrustumPlanes(c);
@@ -36,7 +41,11 @@ public class CameraVisibility : MonoBehaviour
 
         if (targets)
         {
-           
+        //    if (!FirstTimeLookAway){
+        //         Narrator.clip = FirstTimeLookAway1;
+        //         Narrator.Play();
+
+        //     }
         }
         else
         {
@@ -45,8 +54,9 @@ public class CameraVisibility : MonoBehaviour
            if (RedBook.activeSelf && RedBook.GetComponent<SnapObject>().enabled == true){
                 if (FirstTimeLookAway){
                     FirstTimeLookAway = false;
+                    Narrator.clip = FocusUp;
+                    Narrator.Play();
 
-                    
                 }
                 
 
