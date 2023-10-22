@@ -22,7 +22,7 @@ public class TableController : MonoBehaviour {
 
     public Animator TableAnimator;
 
-    public GameObject PHONE;
+    public GameObject PHONE, PAPERS;
 
     // Start is called before the first frame update
     void Start(){
@@ -56,5 +56,6 @@ public class TableController : MonoBehaviour {
 
     public void EnablePhone(){
         PHONE.SetActive(true);
+        PAPERS.SetActive(true);
     }
 }

@@ -11,10 +11,8 @@ public class CameraVisibility : MonoBehaviour
 
     public bool FirstTimeLookAway;
 
-    public AudioClip FocusUp;
-
     [SerializeField]
-    private AudioSource Narrator;
+    private NarratorController NARRATOR;
 
     private bool IsVisible(Camera c, GameObject target)
     {
@@ -54,8 +52,7 @@ public class CameraVisibility : MonoBehaviour
            if (RedBook.activeSelf){
                 if (FirstTimeLookAway){
                     FirstTimeLookAway = false;
-                    Narrator.clip = FocusUp;
-                    Narrator.Play();
+                    NARRATOR.FocusMetric();
 
                 }
                 

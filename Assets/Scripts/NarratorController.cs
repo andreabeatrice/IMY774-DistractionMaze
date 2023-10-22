@@ -27,7 +27,7 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
-    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse;
+    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, NotUntanglingWires, CleanUp;
     
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
@@ -236,7 +236,28 @@ public class NarratorController : MonoBehaviour{
     public IEnumerator LogicPuzzle(){
         yield return new WaitForSeconds(8f);
 
+        Narrator.clip = NotUntanglingWires;
+        Narrator.Play();
+
+
+        StartCoroutine(CleanUpDesk());
+    }
+
+    public IEnumerator CleanUpDesk(){
+        yield return new WaitForSeconds(11f);
+
         THE_TABLE.Play("logic_puzzle_tray_rise");
+
+        Narrator.clip = CleanUp;
+        Narrator.Play();
+
+    }
+
+    public void FocusMetric(){
+        StopAllCoroutines();
+
+        Narrator.clip = FocusUp;
+        Narrator.Play();
     }
     
 
