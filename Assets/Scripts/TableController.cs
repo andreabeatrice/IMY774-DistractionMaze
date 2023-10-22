@@ -22,6 +22,8 @@ public class TableController : MonoBehaviour {
 
     public Animator TableAnimator;
 
+    public GameObject PHONE;
+
     // Start is called before the first frame update
     void Start(){
         
@@ -50,5 +52,9 @@ public class TableController : MonoBehaviour {
         foreach(GameObject go in BOOKS){
             go.SetActive(true);
         }
+    }
+
+    public void EnablePhone(){
+        PHONE.SetActive(true);
     }
 }

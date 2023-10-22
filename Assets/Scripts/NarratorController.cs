@@ -231,6 +231,14 @@ public class NarratorController : MonoBehaviour{
     public void BrokenGravity(){
         Narrator.clip = WeBrokeTheGravityMachine;
         Narrator.Play();
+
+        StartCoroutine(LogicPuzzle());
+    }
+
+    public IEnumerator LogicPuzzle(){
+        yield return new WaitForSeconds(17f);
+
+        THE_TABLE.Play("logic_puzzle_tray_rise");
     }
     
 

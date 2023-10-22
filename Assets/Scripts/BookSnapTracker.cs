@@ -11,10 +11,13 @@ public class BookSnapTracker : MonoBehaviour
 
     public bool sortDetermined;
 
-    public GameObject SnappingThings;
+    public GameObject VisibleSlots;
 
     [SerializeField]
     NarratorController NARRATOR;
+
+    [SerializeField]
+    GlobalControls GLOBAL_CONTROL;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,11 @@ public class BookSnapTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GLOBAL_CONTROL.GetTesting()){
+            AllColorPositionsFalse = true;
+            StartCoroutine(OnSorted());
+        }
+        else {
         int counter = 0;
         if (AllColorPositionsFalse == false && AllHeightPositionsFalse == false) {
             foreach(GameObject go in SnapByColorPositions){
@@ -74,6 +82,7 @@ public class BookSnapTracker : MonoBehaviour
             
 
         }
+        }
 
     }
 
@@ -98,6 +107,8 @@ public class BookSnapTracker : MonoBehaviour
 
     public IEnumerator NextDistraction(){
         yield return new WaitForSeconds(3.5f);
+
+        VisibleSlots.SetActive(false);
 
         foreach(GameObject go in Books){
             go.GetComponent<SnapObject>().enabled = false;
