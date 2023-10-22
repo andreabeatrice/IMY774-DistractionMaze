@@ -32,11 +32,15 @@ public class InnerBottomController : MonoBehaviour{
             Debug.Log("Entered collision with " + collision.gameObject.name);
         }
 
-        collision.gameObject.SetActive(false);
+        if (collision.gameObject.name == "Ball"){
+            collision.gameObject.SetActive(false);
 
-        CLOCK.StopTimer();
+            CLOCK.StopTimer();
 
-        NARRATOR.OnSocketSuccess();
+            NARRATOR.OnSocketSuccess();
+        }
+
+
        
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Oculus.Interaction;
 
 public class BookSnapTracker : MonoBehaviour
 {
@@ -83,6 +84,7 @@ public class BookSnapTracker : MonoBehaviour
         sortDetermined = true;
         if (AllColorPositionsFalse) {
             Debug.Log("Sorted by height");
+            NARRATOR.OrganizedByHeightResponse();
         }
         else {
             Debug.Log("Sorted by color");
@@ -95,11 +97,12 @@ public class BookSnapTracker : MonoBehaviour
     }
 
     public IEnumerator NextDistraction(){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3.5f);
 
         foreach(GameObject go in Books){
             go.GetComponent<SnapObject>().enabled = false;
             go.GetComponent<SnapObjectDuplicate>().enabled = false;
+            go.GetComponent<Grabbable>().enabled = false;
         }
 
         foreach(GameObject go in SnapByColorPositions){

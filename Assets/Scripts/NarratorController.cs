@@ -24,7 +24,7 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
-    public AudioClip WeBrokeTheGravityMachine;
+    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse;
     
     private bool FirstTouchPickUp, DistancePickupTutorial;
 
@@ -213,6 +213,11 @@ public class NarratorController : MonoBehaviour{
 
     public void OrganizedByColourResponse(){
         Narrator.clip = ByColorResponseAudio;
+        Narrator.Play();
+    }
+
+    public void OrganizedByHeightResponse(){
+        Narrator.clip = ByHeightResponse;
         Narrator.Play();
     }
 
