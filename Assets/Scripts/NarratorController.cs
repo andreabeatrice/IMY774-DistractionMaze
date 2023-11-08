@@ -240,18 +240,9 @@ public class NarratorController : MonoBehaviour{
         Narrator.Play();
 
 
-        StartCoroutine(CleanUpDesk());
+        THE_TABLE.Play("breath_tray_rise");
     }
 
-    public IEnumerator CleanUpDesk(){
-        yield return new WaitForSeconds(11f);
-
-        THE_TABLE.Play("logic_puzzle_tray_rise");
-
-        Narrator.clip = CleanUp;
-        Narrator.Play();
-
-    }
 
     public void FocusMetric(){
         StopAllCoroutines();

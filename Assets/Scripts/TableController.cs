@@ -22,7 +22,7 @@ public class TableController : MonoBehaviour {
 
     public Animator TableAnimator;
 
-    public GameObject PHONE, PAPERS;
+    public GameObject GUIDE_BALL, BREATH_TRACKER, GRIP_BOX, PHONE;
 
     // Start is called before the first frame update
     void Start(){
@@ -55,7 +55,9 @@ public class TableController : MonoBehaviour {
     }
 
     public void EnablePhone(){
+        GUIDE_BALL.SetActive(true);
+        BREATH_TRACKER.SetActive(true);
+        GRIP_BOX.SetActive(true);
         PHONE.SetActive(true);
-        PAPERS.SetActive(true);
     }
 }
