@@ -27,9 +27,9 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
-    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, NotUntanglingWires, CleanUp;
+    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction;
     
-    private bool FirstTouchPickUp, DistancePickupTutorial;
+    private bool FirstTouchPickUp, DistancePickupTutorial, BreathTutorial;
 
     // Start is called before the first frame update
     void Start(){
@@ -45,6 +45,7 @@ public class NarratorController : MonoBehaviour{
             ShowDistanceGrab();
             FirstTouchPickUp = false;
             DistancePickupTutorial = false;
+            BreathTutorial = false;
             THE_TABLE.Play("reveal_ball");
             THE_TARGET.Play("show_target");
         }
@@ -236,11 +237,53 @@ public class NarratorController : MonoBehaviour{
     public IEnumerator LogicPuzzle(){
         yield return new WaitForSeconds(8f);
 
-        Narrator.clip = NotUntanglingWires;
+        Narrator.clip = SimplerTask;
         Narrator.Play();
 
 
         THE_TABLE.Play("breath_tray_rise");
+    }
+
+    public void GrabbedControl(){
+        if (!BreathTutorial){
+            BreathTutorial = true;
+            string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
+
+            Debug.Log(timeString);
+            string[] timeSplit = timeString.Split(",");
+
+            float firstTwo = float.Parse(timeSplit[0]);
+            float secondTwo = 0;
+
+            if(timeSplit[1] != null){
+                secondTwo = float.Parse(timeSplit[1]);
+            }
+            
+
+            Debug.Log(firstTwo + " " + secondTwo);
+
+            float tens = 10;
+            float units = 0;
+
+            tens = tens - firstTwo;
+
+            tens = tens * 60;
+
+            tens = tens - secondTwo;
+
+            tens = tens/60;
+
+            timeString = tens.ToString();
+            timeSplit = timeString.Split(",");
+
+            timeSplit[1] = timeSplit[1].Substring(0, 2);
+
+            CLOCK.StartNewMinutesCountdown(int.Parse(timeSplit[0]), int.Parse(timeSplit[1]));
+
+            Narrator.clip = BreathInstruction;
+            Narrator.Play();
+        }
+        
     }
 
 

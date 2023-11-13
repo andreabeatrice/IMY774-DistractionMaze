@@ -6,6 +6,8 @@ public class RandomSparking : MonoBehaviour
 {
 
     public AudioSource FUSE_BOX;
+
+    public AudioClip Option1, Option2;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,20 @@ public class RandomSparking : MonoBehaviour
     }
 
     public void StartSparking(){
+        int clip = Random.Range(1,3);
+
+        switch (clip){
+            case 1: 
+                FUSE_BOX.clip = Option1;
+            break;
+            case 2: 
+                FUSE_BOX.clip = Option2;
+            break;
+        }
+
         FUSE_BOX.Play();
 
-        float time = Random.Range(0.5f, 10f);
+        float time = Random.Range(1f, 15f);
         
         StartCoroutine(PlaySpark(time));
 
