@@ -61,7 +61,9 @@ public class TableController : MonoBehaviour {
         PHONE.SetActive(true);
 
         string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
-        string[] timeSplit = timeString.Split(".");
+
+        Debug.Log(timeString);
+        string[] timeSplit = timeString.Split(",");
 
         int firstTwo = int.Parse(timeSplit[0]);
         int secondTwo = int.Parse(timeSplit[1]);

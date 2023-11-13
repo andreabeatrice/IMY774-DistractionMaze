@@ -105,7 +105,8 @@ public class BookSnapTracker : MonoBehaviour
         }
 
         CLOCK.StopTimer();
-        GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
+
+
 
         StartCoroutine(NextDistraction());
 
@@ -114,6 +115,10 @@ public class BookSnapTracker : MonoBehaviour
 
     public IEnumerator NextDistraction(){
         yield return new WaitForSeconds(5f);
+
+        GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
+
+        Debug.Log(GLOBAL_CONTROL.GetRemainingTime());
 
         VisibleSlots.SetActive(false);
 
