@@ -65,12 +65,33 @@ public class TableController : MonoBehaviour {
         Debug.Log(timeString);
         string[] timeSplit = timeString.Split(",");
 
-        int firstTwo = int.Parse(timeSplit[0]);
-        int secondTwo = int.Parse(timeSplit[1]);
+        float firstTwo = float.Parse(timeSplit[0]);
+        float secondTwo = 0;
+
+        if(timeSplit[1] != null){
+            secondTwo = float.Parse(timeSplit[1]);
+        }
+         
 
         Debug.Log(firstTwo + " " + secondTwo);
 
-        //CLOCK.StartNewMinutesCountdown(3, 0);
+        float tens = 10;
+        float units = 0;
+
+        tens = tens - firstTwo;
+
+        tens = tens * 60;
+
+        tens = tens - secondTwo;
+
+        tens = tens/60;
+
+        timeString = tens.ToString();
+        timeSplit = timeString.Split(",");
+
+        timeSplit[1] = timeSplit[1].Substring(0, 2);
+
+        CLOCK.StartNewMinutesCountdown(int.Parse(timeSplit[0]), int.Parse(timeSplit[1]));
 
 
     }

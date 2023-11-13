@@ -43,8 +43,8 @@ public class BookSnapTracker : MonoBehaviour
     void Update()
     {
         if(GLOBAL_CONTROL.GetTesting()){
-            AllColorPositionsFalse = true;
-            StartCoroutine(OnSorted());
+            
+            StartCoroutine(Testing());
         }
         else {
         int counter = 0;
@@ -90,6 +90,16 @@ public class BookSnapTracker : MonoBehaviour
 
     }
 
+    public IEnumerator Testing(){
+
+        yield return new WaitForSeconds(1.5f);
+
+        AllColorPositionsFalse = true;
+
+        StartCoroutine(OnSorted());
+
+    }
+
     public IEnumerator OnSorted(){
 
         yield return new WaitForSeconds(0.5f);
@@ -118,7 +128,7 @@ public class BookSnapTracker : MonoBehaviour
 
         GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
 
-        Debug.Log(GLOBAL_CONTROL.GetRemainingTime());
+        //Debug.Log(GLOBAL_CONTROL.GetRemainingTime());
 
         VisibleSlots.SetActive(false);
 
