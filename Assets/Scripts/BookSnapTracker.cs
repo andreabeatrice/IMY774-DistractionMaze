@@ -18,6 +18,10 @@ public class BookSnapTracker : MonoBehaviour
 
     [SerializeField]
     GlobalControls GLOBAL_CONTROL;
+
+    [SerializeField]
+    CountdownClock CLOCK;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -92,13 +96,16 @@ public class BookSnapTracker : MonoBehaviour
 
         sortDetermined = true;
         if (AllColorPositionsFalse) {
-            Debug.Log("Sorted by height");
+            //Debug.Log("Sorted by height");
             NARRATOR.OrganizedByHeightResponse();
         }
         else {
-            Debug.Log("Sorted by color");
+            //Debug.Log("Sorted by color");
             NARRATOR.OrganizedByColourResponse();
         }
+
+        CLOCK.StopTimer();
+        GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
 
         StartCoroutine(NextDistraction());
 

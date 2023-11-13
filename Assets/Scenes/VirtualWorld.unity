@@ -4219,7 +4219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8951a656a7c00e74094166ef415cdce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 0}
+  _collider: {fileID: 586584219}
 --- !u!114 &586584211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8078,6 +8078,7 @@ MonoBehaviour:
   ME: {fileID: 1003877606}
   NARRATOR: {fileID: 987446681}
   GLOBAL_CONTROL: {fileID: 987446684}
+  CLOCK: {fileID: 7868555544286540987}
 --- !u!1001 &1041227477
 PrefabInstance:
   m_ObjectHideFlags: 0

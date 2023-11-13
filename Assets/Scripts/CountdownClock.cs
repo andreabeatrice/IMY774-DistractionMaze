@@ -155,4 +155,10 @@ public class CountdownClock : MonoBehaviour
     public void StopTimer(){
         StopAllCoroutines();
     }
+
+    public float GetClockValue(){
+        string number = TimeToGoFirstDigits + "," + TimeToGoSecondDigits;
+        return float.Parse(number);
+
+    }
 }

@@ -59,5 +59,17 @@ public class TableController : MonoBehaviour {
         BREATH_TRACKER.SetActive(true);
         GRIP_BOX.SetActive(true);
         PHONE.SetActive(true);
+
+        string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
+        string[] timeSplit = timeString.Split(".");
+
+        int firstTwo = int.Parse(timeSplit[0]);
+        int secondTwo = int.Parse(timeSplit[1]);
+
+        Debug.Log(firstTwo + " " + secondTwo);
+
+        //CLOCK.StartNewMinutesCountdown(3, 0);
+
+
     }
 }

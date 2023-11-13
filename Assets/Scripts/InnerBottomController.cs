@@ -37,6 +37,9 @@ public class InnerBottomController : MonoBehaviour{
 
             CLOCK.StopTimer();
 
+            GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
+
+
             NARRATOR.OnSocketSuccess();
         }
 

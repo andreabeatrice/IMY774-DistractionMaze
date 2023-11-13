@@ -29,7 +29,7 @@ public class GrowingBallController : MonoBehaviour
 
     void FixedUpdate(){
         float size = (Controller.transform.position.x - NewRHP);
-        Debug.Log(size);
+        //Debug.Log(size);
 
         if (grabbed && size != 0.4f && size != 0f){
             size *= 0.5f;
