@@ -7639,6 +7639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 909036670}
+  - component: {fileID: 909036671}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -7654,7 +7655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909036669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8448563, y: 0.25876772, z: 1.2226951}
+  m_LocalPosition: {x: -5.8448563, y: 0.2587677, z: 1.222695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7664,6 +7665,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &909036671
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909036669}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 330ddd2d1b2226c4ea4f057616816149, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &937400088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18339,6 +18361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865175772}
   - component: {fileID: 1865175773}
+  - component: {fileID: 1865175774}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -18373,7 +18396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 4608cadfa90bc0d46a2ab2fbf558d474, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -18458,6 +18481,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1865175774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865175771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpatialization: 1
+  gain: 0
+  useInvSqr: 1
+  near: 0.25
+  far: 8
+  volumetricRadius: 8
+  reverbSend: 0
+  enableRfl: 1
 --- !u!1 &1887860347
 GameObject:
   m_ObjectHideFlags: 0
