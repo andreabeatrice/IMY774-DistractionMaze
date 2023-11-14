@@ -231,10 +231,10 @@ public class NarratorController : MonoBehaviour{
         Narrator.clip = WeBrokeTheGravityMachine;
         Narrator.Play();
 
-        StartCoroutine(LogicPuzzle());
+        StartCoroutine(BreathingTest());
     }
 
-    public IEnumerator LogicPuzzle(){
+    public IEnumerator BreathingTest(){
         yield return new WaitForSeconds(8f);
 
         Narrator.clip = SimplerTask;
