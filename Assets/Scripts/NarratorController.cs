@@ -30,7 +30,7 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
-    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction;
+    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction, WhatsHappening;
     
     private bool FirstTouchPickUp, DistancePickupTutorial, BreathTutorial;
 
@@ -361,10 +361,24 @@ public class NarratorController : MonoBehaviour{
         }
         else { //bb.moveobjects
             RenderSettings.ambientIntensity = 0.25f;
+
+            Narrator.clip = WhatsHappening;
+            Narrator.Play();
+
+            StartCoroutine(BackUp());
             
         }
         
     }
+
+     private IEnumerator BackUp(){
+        yield return new WaitForSeconds(3f);
+
+        THE_LIGHT.Play("power_back_up");
+
+        VIDEO_PLAYER.Play("screen_rolldown");
+        VIDEO_AUDIO.Play();
+     }
     
 
     // public void SummonedTheBall(){
