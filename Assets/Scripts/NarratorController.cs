@@ -14,16 +14,19 @@ public class NarratorController : MonoBehaviour{
     private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET, THE_LIGHT, VIDEO_PLAYER;
 
     [SerializeField]
-    private AudioSource Narrator, VIDEO_AUDIO;
+    private AudioSource Narrator, VIDEO_AUDIO, POWER_AUDIO, ELECTRIC_CABLE, BUZZ, RECORDING;
 
     [SerializeField]
     private RandomSparking FUSE_BOX;
 
     [SerializeField]
-    GameObject DistanceInteractorLeft, DistanceInteractorRight;
+    GameObject DistanceInteractorLeft, DistanceInteractorRight, BreathGuide;
 
     [SerializeField]
     OriginalPositionCheck OPC;
+
+    [SerializeField]
+    RandomSparking rs;
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
@@ -51,6 +54,8 @@ public class NarratorController : MonoBehaviour{
             BreathTutorial = false;
             THE_TABLE.Play("reveal_ball");
             THE_TARGET.Play("show_target");
+
+            PowerOutage();
         }
         
     }
@@ -256,6 +261,8 @@ public class NarratorController : MonoBehaviour{
             Narrator.Play();
         }
 
+        BreathGuide.SetActive(true);
+
         string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
 
         Debug.Log(timeString);
@@ -264,7 +271,7 @@ public class NarratorController : MonoBehaviour{
         float firstTwo = float.Parse(timeSplit[0]);
         float secondTwo = 0;
 
-        if(timeSplit[1] != null){
+        if(timeSplit.Length > 1){
             secondTwo = float.Parse(timeSplit[1]);
         }
             
@@ -330,7 +337,33 @@ public class NarratorController : MonoBehaviour{
     public void PowerOutage(){
         Debug.Log("POWER'S OUT");
 
-        THE_LIGHT.Play("power_out");
+        THE_LIGHT.Play("power_down_with_material");
+
+        CLOCK.StopTimer();
+
+        POWER_AUDIO.Play();
+        ELECTRIC_CABLE.Pause();
+        BUZZ.Pause();
+        RECORDING.Pause();
+
+        rs.StopSparking();
+        RenderSettings.ambientIntensity = 1;
+
+        StartCoroutine(OneSecondLight(2));
+    }
+
+    private IEnumerator OneSecondLight(int i){
+        yield return new WaitForSeconds(1f);
+        i -= 1;
+        if(i != 0){
+            RenderSettings.ambientIntensity = 0.5f;
+            StartCoroutine(OneSecondLight(i));
+        }
+        else { //bb.moveobjects
+            RenderSettings.ambientIntensity = 0.25f;
+            
+        }
+        
     }
     
 

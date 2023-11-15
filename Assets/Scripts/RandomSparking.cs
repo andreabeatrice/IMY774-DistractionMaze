@@ -46,5 +46,9 @@ public class RandomSparking : MonoBehaviour
         StartSparking();
     }
 
+    public void StopSparking(){
+        StopAllCoroutines();
+    }
+
 
 }

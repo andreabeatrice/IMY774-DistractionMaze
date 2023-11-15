@@ -55,7 +55,7 @@ public class TableController : MonoBehaviour {
     }
 
     public void EnablePhone(){
-        GUIDE_BALL.SetActive(true);
+        
         BREATH_TRACKER.SetActive(true);
         GRIP_BOX.SetActive(true);
         PHONE.SetActive(true);
