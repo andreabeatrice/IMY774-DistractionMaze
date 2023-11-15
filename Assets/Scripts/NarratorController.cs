@@ -42,6 +42,7 @@ public class NarratorController : MonoBehaviour{
 
             FirstTouchPickUp = true;
             DistancePickupTutorial = true;
+            BreathTutorial = true;
         }
         else {
             ShowDistanceGrab();
@@ -278,15 +279,19 @@ public class NarratorController : MonoBehaviour{
 
         tens = tens - secondTwo;
 
+        tens = tens/60;
+
         timeBeforePowerOff = (float) Mathf.Round(tens);
 
         Debug.Log(tens);
 
             //int.Parse(timeSplit[0]), int.Parse(timeSplit[1])
 
-        CLOCK.StartNewMinutesCountdown(5, 0);
+        int timer = 10 - (int) timeBeforePowerOff;
 
-        StartCountingTimeTillPowerOff();
+        CLOCK.StartNewMinutesCountdown(10, 0);
+
+        StartCountingTimeTillPowerOff(timer);
         
     }
 
@@ -298,7 +303,9 @@ public class NarratorController : MonoBehaviour{
         Narrator.Play();
     }
 
-    public void StartCountingTimeTillPowerOff(){
+    public void StartCountingTimeTillPowerOff(int i){
+        timeBeforePowerOff = i * 60;
+        Debug.Log(timeBeforePowerOff);
         if(timeBeforePowerOff != 0){
             StartCoroutine(OneSecond());
         }
@@ -309,8 +316,15 @@ public class NarratorController : MonoBehaviour{
 
     private IEnumerator OneSecond(){
         yield return new WaitForSeconds(1f);
-
         timeBeforePowerOff -= 1;
+        Debug.Log(timeBeforePowerOff);
+        if(timeBeforePowerOff != 0){
+            StartCoroutine(OneSecond());
+        }
+        else { //bb.moveobjects
+            PowerOutage();
+        }
+        
     }
 
     public void PowerOutage(){
