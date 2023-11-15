@@ -11,10 +11,10 @@ public class NarratorController : MonoBehaviour{
     CountdownClock CLOCK;
     
     [SerializeField]
-    private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET, THE_LIGHT;
+    private Animator POST_PROCESSOR, THE_TABLE, THE_TARGET, THE_LIGHT, VIDEO_PLAYER;
 
     [SerializeField]
-    private AudioSource Narrator;
+    private AudioSource Narrator, VIDEO_AUDIO;
 
     [SerializeField]
     private RandomSparking FUSE_BOX;
@@ -30,6 +30,8 @@ public class NarratorController : MonoBehaviour{
     public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction;
     
     private bool FirstTouchPickUp, DistancePickupTutorial, BreathTutorial;
+
+    private float timeBeforePowerOff;
 
     // Start is called before the first frame update
     void Start(){
@@ -128,7 +130,7 @@ public class NarratorController : MonoBehaviour{
 
             Narrator.Play();
 
-            StartCoroutine(ExplainFingers());
+            //StartCoroutine(ExplainFingers());
 
             ShowDistanceGrab();
         }
@@ -245,44 +247,46 @@ public class NarratorController : MonoBehaviour{
     }
 
     public void GrabbedControl(){
-        if (!BreathTutorial){
-            BreathTutorial = true;
-            string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
+        if (BreathTutorial){
+            BreathTutorial = false;
 
-            Debug.Log(timeString);
-            string[] timeSplit = timeString.Split(",");
-
-            float firstTwo = float.Parse(timeSplit[0]);
-            float secondTwo = 0;
-
-            if(timeSplit[1] != null){
-                secondTwo = float.Parse(timeSplit[1]);
-            }
-            
-
-            Debug.Log(firstTwo + " " + secondTwo);
-
-            float tens = 10;
-            float units = 0;
-
-            tens = tens - firstTwo;
-
-            tens = tens * 60;
-
-            tens = tens - secondTwo;
-
-            tens = tens/60;
-
-            timeString = tens.ToString();
-            timeSplit = timeString.Split(",");
-
-            timeSplit[1] = timeSplit[1].Substring(0, 2);
-
-            CLOCK.StartNewMinutesCountdown(int.Parse(timeSplit[0]), int.Parse(timeSplit[1]));
 
             Narrator.clip = BreathInstruction;
             Narrator.Play();
         }
+
+        string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
+
+        Debug.Log(timeString);
+        string[] timeSplit = timeString.Split(",");
+
+        float firstTwo = float.Parse(timeSplit[0]);
+        float secondTwo = 0;
+
+        if(timeSplit[1] != null){
+            secondTwo = float.Parse(timeSplit[1]);
+        }
+            
+
+        Debug.Log(firstTwo + " " + secondTwo);
+
+        float tens = 10;
+
+        tens = tens - firstTwo;
+
+        tens = tens * 60;
+
+        tens = tens - secondTwo;
+
+        timeBeforePowerOff = (float) Mathf.Round(tens);
+
+        Debug.Log(tens);
+
+            //int.Parse(timeSplit[0]), int.Parse(timeSplit[1])
+
+        CLOCK.StartNewMinutesCountdown(5, 0);
+
+        StartCountingTimeTillPowerOff();
         
     }
 
@@ -292,6 +296,28 @@ public class NarratorController : MonoBehaviour{
 
         Narrator.clip = FocusUp;
         Narrator.Play();
+    }
+
+    public void StartCountingTimeTillPowerOff(){
+        if(timeBeforePowerOff != 0){
+            StartCoroutine(OneSecond());
+        }
+        else {
+            PowerOutage();
+        }
+    }
+
+    private IEnumerator OneSecond(){
+        yield return new WaitForSeconds(1f);
+
+        timeBeforePowerOff -= 1;
+    }
+
+    public void PowerOutage(){
+        Debug.Log("POWER'S OUT");
+
+        VIDEO_PLAYER.Play("screen_rolldown");
+        VIDEO_AUDIO.Play();
     }
     
 
