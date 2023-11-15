@@ -316,8 +316,7 @@ public class NarratorController : MonoBehaviour{
     public void PowerOutage(){
         Debug.Log("POWER'S OUT");
 
-        VIDEO_PLAYER.Play("screen_rolldown");
-        VIDEO_AUDIO.Play();
+        THE_LIGHT.Play("power_out");
     }
     
 
