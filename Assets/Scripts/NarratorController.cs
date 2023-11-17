@@ -311,7 +311,7 @@ public class NarratorController : MonoBehaviour{
     }
 
     public void StartCountingTimeTillPowerOff(int i){
-        timeBeforePowerOff = i * 60;
+        timeBeforePowerOff = 60;
         Debug.Log(timeBeforePowerOff);
         if(timeBeforePowerOff != 0){
             StartCoroutine(OneSecond());
@@ -345,6 +345,8 @@ public class NarratorController : MonoBehaviour{
         ELECTRIC_CABLE.Pause();
         BUZZ.Pause();
         RECORDING.Pause();
+
+        BreathGuide.SetActive(false);
 
         rs.StopSparking();
         RenderSettings.ambientIntensity = 1;

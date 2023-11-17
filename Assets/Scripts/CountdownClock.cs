@@ -10,10 +10,12 @@ public class CountdownClock : MonoBehaviour
     [SerializeField] TMP_Text firstTwoDigits, secondTwoDigits, divider;
     [SerializeField] AudioSource buzzer, digitalTick;
 
+    protected bool paused;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        paused = false;
         //firstTwoDigits.text = TimeToGoFirstDigits.ToString() ;
         //secondTwoDigits.text = TimeToGoSecondDigits.ToString() ;
         //StartCoroutine(Countdown());
@@ -23,6 +25,10 @@ public class CountdownClock : MonoBehaviour
     void Update()
     {
         //transform.GetComponent<TextMesh>().text
+
+        if ( paused == true){
+            
+        }
     }
 
     public IEnumerator Countdown(){
@@ -79,7 +85,10 @@ public class CountdownClock : MonoBehaviour
         firstTwoDigits.text = "00";
         digitalTick.Play();
 
-        StartCoroutine(Countdown());
+        if (paused == false){
+            StartCoroutine(Countdown());
+        }
+        
 
     }
 
@@ -109,7 +118,9 @@ public class CountdownClock : MonoBehaviour
             secondTwoDigits.text = "   " + TimeToGoSecondDigits.ToString() ;
         }
 
-        StartCoroutine(CountdownMinutes());
+        if (paused == false){
+            StartCoroutine(CountdownMinutes());
+        }
     }
 
     public IEnumerator CountdownMinutes(){
@@ -148,7 +159,10 @@ public class CountdownClock : MonoBehaviour
             secondTwoDigits.text = "   " + TimeToGoSecondDigits.ToString() ;
         }
 
-        StartCoroutine(CountdownMinutes());
+        if(paused == false){
+            StartCoroutine(CountdownMinutes());
+        }
+        
 
     }
 
@@ -160,5 +174,13 @@ public class CountdownClock : MonoBehaviour
         string number = TimeToGoFirstDigits + "," + TimeToGoSecondDigits;
         return float.Parse(number);
 
+    }
+
+    public void Pause(){
+        paused = true;
+    }
+
+    public void Resume(){
+        paused = false;
     }
 }

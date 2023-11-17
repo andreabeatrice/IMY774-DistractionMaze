@@ -36,7 +36,7 @@ public class GlobalControls : MonoBehaviour
 
         if(OVRInput.Get(OVRInput.Button.Start) && opened == false){
             float dialogX = OVRPlayerController.transform.position.x + 0f;
-            float dialogY = OVRPlayerController.transform.position.y + 0.3f;
+            float dialogY = OVRPlayerController.transform.position.y + 0.1f;
             float dialogZ = OVRPlayerController.transform.position.z + 0.3f;
         
             UI_CANVAS.transform.position = new Vector3(dialogX, dialogY, dialogZ);
@@ -83,7 +83,7 @@ public class GlobalControls : MonoBehaviour
     }
 
     public IEnumerator LeaveWorld(){
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         Application.Quit();
     }
 
