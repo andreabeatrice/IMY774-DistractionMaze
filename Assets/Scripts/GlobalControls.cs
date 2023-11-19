@@ -7,7 +7,7 @@ public class GlobalControls : MonoBehaviour
 {
 
     [SerializeField]
-    private bool testing, opened;
+    private bool testing, opened, video_watched;
 
     private float remaining_time;
 
@@ -18,11 +18,25 @@ public class GlobalControls : MonoBehaviour
     public AudioClip InterestingChoice, InterestingChoice2;
 
     public Animator THE_LIGHT;
+
+    void Awake(){
+        if(SaveSystem.LoadProgress() == true){
+            SceneManager.LoadScene("CanvasTaskTest");
+        }
+        else {
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         remaining_time = 0f;
         opened =false;
+    }
+    
+    public bool GetVideoWatched(){
+        return video_watched;
     }
 
     // Update is called once per frame
@@ -104,5 +118,6 @@ public class GlobalControls : MonoBehaviour
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("VirtualWorld");
     }
+
 
 }

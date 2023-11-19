@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CountdownClock : MonoBehaviour
 {
 
     public int TimeToGoFirstDigits, TimeToGoSecondDigits;
     [SerializeField] TMP_Text firstTwoDigits, secondTwoDigits, divider;
-    [SerializeField] AudioSource buzzer, digitalTick;
+    [SerializeField] AudioSource buzzer, digitalTick, NARRATOR;
+
+    public AudioClip NowWeHaveToStartOver;
+
+    public Animator THE_LIGHT;
 
     protected bool paused;
 
@@ -54,6 +59,7 @@ public class CountdownClock : MonoBehaviour
            secondTwoDigits.color = new Color32(255, 0, 0, 255);
            divider.color = new Color32(255, 0, 0, 255);
            buzzer.Play();
+           RanOutOfTime();
 
         }
 
@@ -85,9 +91,8 @@ public class CountdownClock : MonoBehaviour
         firstTwoDigits.text = "00";
         digitalTick.Play();
 
-        if (paused == false){
-            StartCoroutine(Countdown());
-        }
+        StartCoroutine(Countdown());
+        
         
 
     }
@@ -118,9 +123,8 @@ public class CountdownClock : MonoBehaviour
             secondTwoDigits.text = "   " + TimeToGoSecondDigits.ToString() ;
         }
 
-        if (paused == false){
-            StartCoroutine(CountdownMinutes());
-        }
+        StartCoroutine(CountdownMinutes());
+        
     }
 
     public IEnumerator CountdownMinutes(){
@@ -140,6 +144,7 @@ public class CountdownClock : MonoBehaviour
             secondTwoDigits.color = new Color32(255, 0, 0, 255);
             divider.color = new Color32(255, 0, 0, 255);
             buzzer.Play();
+            RanOutOfTime();
         }
 
 
@@ -159,7 +164,7 @@ public class CountdownClock : MonoBehaviour
             secondTwoDigits.text = "   " + TimeToGoSecondDigits.ToString() ;
         }
 
-        if(paused == false){
+        if(TimeToGoFirstDigits > 0 || TimeToGoSecondDigits > 0){
             StartCoroutine(CountdownMinutes());
         }
         
@@ -182,5 +187,22 @@ public class CountdownClock : MonoBehaviour
 
     public void Resume(){
         paused = false;
+    }
+
+    public void RanOutOfTime(){
+        NARRATOR.clip = NowWeHaveToStartOver;
+
+        NARRATOR.Play();
+
+        THE_LIGHT.Play("power_down_with_material");
+
+        StartCoroutine(ResetTheExperiment());
+    }
+
+    public IEnumerator ResetTheExperiment(){
+        yield return new WaitForSeconds(4f);
+
+        SceneManager.LoadScene("VirtualWorldReset");
+    
     }
 }

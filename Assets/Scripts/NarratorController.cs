@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NarratorController : MonoBehaviour{
 
@@ -28,6 +29,7 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     RandomSparking rs;
 
+
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
     public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction, WhatsHappening;
@@ -39,7 +41,7 @@ public class NarratorController : MonoBehaviour{
     // Start is called before the first frame update
     void Start(){
         if(!GLOBAL_CONTROL.GetTesting()){
-            POST_PROCESSOR.Play("Eyes Open");
+            //POST_PROCESSOR.Play("Eyes Open");
 
             StartCoroutine(WaitForWakeup());
 
@@ -80,7 +82,13 @@ public class NarratorController : MonoBehaviour{
 
         Narrator.Play();
 
-        StartCoroutine(WaitForLookAround());
+        if (SceneManager.GetActiveScene().name == "VirtualWorld"){
+            StartCoroutine(WaitForLookAroundLonger());
+        }
+        if (SceneManager.GetActiveScene().name == "VirtualWorldReset"){
+            StartCoroutine(RevealTheBall());
+        }
+        
     }
 
     private IEnumerator WaitForLookAround(){
@@ -92,6 +100,18 @@ public class NarratorController : MonoBehaviour{
 
         StartCoroutine(RevealTheBall());
     }
+
+    private IEnumerator WaitForLookAroundLonger(){
+        yield return new WaitForSeconds(14f);
+
+        Narrator.clip = YouKnowEvenThoughThisRoomIsVeryEmpty;
+
+        Narrator.Play();
+
+        StartCoroutine(RevealTheBall());
+    }
+
+
 
     private IEnumerator RevealTheBall(){
         yield return new WaitForSeconds(4f);
@@ -201,6 +221,8 @@ public class NarratorController : MonoBehaviour{
         Narrator.Play();
 
         THE_TABLE.Play("hide_socket");
+
+        SaveSystem.SaveProgress(true);
 
         //THE_TABLE.Play("reveal_books");
         //WellDoneAudio
@@ -358,11 +380,9 @@ public class NarratorController : MonoBehaviour{
         yield return new WaitForSeconds(1f);
         i -= 1;
         if(i != 0){
-            RenderSettings.ambientIntensity = 0.5f;
             StartCoroutine(OneSecondLight(i));
         }
         else { //bb.moveobjects
-            RenderSettings.ambientIntensity = 0.25f;
 
             Narrator.clip = WhatsHappening;
             Narrator.Play();
@@ -380,6 +400,8 @@ public class NarratorController : MonoBehaviour{
 
         VIDEO_PLAYER.Play("screen_rolldown");
         VIDEO_AUDIO.Play();
+
+        
      }
     
 

@@ -9104,6 +9104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testing: 0
   opened: 0
+  video_watched: 0
   UI_CANVAS: {fileID: 1885159445}
   OVRPlayerController: {fileID: 1972126201}
   Narrator: {fileID: 1498684968}
@@ -13294,7 +13295,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e27be816cb81521419d18109a5ae458e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 307bed5cf21755644b4ce6188c39275f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -24234,6 +24235,10 @@ MonoBehaviour:
   divider: {fileID: 405551143}
   buzzer: {fileID: 7868555544286540989}
   digitalTick: {fileID: 405551145}
+  NARRATOR: {fileID: 1498684968}
+  NowWeHaveToStartOver: {fileID: 8300000, guid: 3d59892cc0b0a3a4893809008eed9bdc,
+    type: 3}
+  THE_LIGHT: {fileID: 1152534282}
 --- !u!114 &7868555544286540988
 MonoBehaviour:
   m_ObjectHideFlags: 0
