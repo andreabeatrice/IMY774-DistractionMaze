@@ -265,7 +265,7 @@ public class NarratorController : MonoBehaviour{
     }
 
     public IEnumerator IntroduceCircuits(){
-        yield return new WaitForSeconds(9f);
+        yield return new WaitForSeconds(10f);
 
         Narrator.clip = SimplerTask;
         Narrator.Play();
@@ -277,7 +277,7 @@ public class NarratorController : MonoBehaviour{
     }
 
     public IEnumerator CircuitTutorialMethod(){
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(7f);
 
         if (CircuitTutorial){
             CircuitTutorial = false;
@@ -304,19 +304,6 @@ public class NarratorController : MonoBehaviour{
     }
 
    
-
-    private IEnumerator OneSecond(){
-        yield return new WaitForSeconds(1f);
-        timeBeforePowerOff -= 1;
-        Debug.Log(timeBeforePowerOff);
-        if(timeBeforePowerOff != 0){
-            StartCoroutine(OneSecond());
-        }
-        else { //bb.moveobjects
-            PowerOutage();
-        }
-        
-    }
 
     public void PowerOutage(){
         Debug.Log("POWER'S OUT");

@@ -114,7 +114,7 @@ public class BookSnapTracker : MonoBehaviour
             NARRATOR.OrganizedByColourResponse();
         }
 
-        CLOCK.StopTimer();
+        //CLOCK.StopTimer();
 
 
 
@@ -126,7 +126,7 @@ public class BookSnapTracker : MonoBehaviour
     public IEnumerator NextDistraction(){
         yield return new WaitForSeconds(5f);
 
-        GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
+        //GLOBAL_CONTROL.AddToRemainingTime(CLOCK.GetClockValue());
 
         //Debug.Log(GLOBAL_CONTROL.GetRemainingTime());
 
