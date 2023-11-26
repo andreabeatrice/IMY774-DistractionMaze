@@ -26,7 +26,14 @@ public static class SaveSystem
 
             FileStream stream = new FileStream(path, FileMode.Open);
 
-            bool watched = (bool) formatter.Deserialize(stream);
+            string w = formatter.Deserialize(stream) as string;
+
+            bool watched = false;
+
+            if (w != null){
+                watched = bool.Parse(w);
+            }
+            
             stream.Close();
 
             return watched;
