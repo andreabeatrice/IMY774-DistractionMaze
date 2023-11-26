@@ -19,7 +19,7 @@ public class TileChecker : MonoBehaviour
     {
         RightPlace = false;
 
-        Debug.Log(this);
+        //Debug.Log(this);
     }
 
     // Update is called once per frame

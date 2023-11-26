@@ -21,7 +21,7 @@ public class NarratorController : MonoBehaviour{
     private RandomSparking FUSE_BOX;
 
     [SerializeField]
-    GameObject DistanceInteractorLeft, DistanceInteractorRight, BreathGuide;
+    GameObject DistanceInteractorLeft, DistanceInteractorRight, Tiles, StartingPoint, EndingPoint, TableCanvas;
 
     [SerializeField]
     OriginalPositionCheck OPC;
@@ -32,9 +32,9 @@ public class NarratorController : MonoBehaviour{
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
-    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, BreathInstruction, WhatsHappening;
+    public AudioClip WeBrokeTheGravityMachine, ByHeightResponse, FocusUp, SimplerTask, CircuitInstruction, WhatsHappening;
     
-    private bool FirstTouchPickUp, DistancePickupTutorial, BreathTutorial;
+    private bool FirstTouchPickUp, DistancePickupTutorial, CircuitTutorial;
 
     private float timeBeforePowerOff;
 
@@ -47,13 +47,13 @@ public class NarratorController : MonoBehaviour{
 
             FirstTouchPickUp = true;
             DistancePickupTutorial = true;
-            BreathTutorial = true;
+            CircuitTutorial = true;
         }
         else {
             ShowDistanceGrab();
             FirstTouchPickUp = false;
             DistancePickupTutorial = false;
-            BreathTutorial = false;
+            CircuitTutorial = false;
             THE_TABLE.Play("reveal_ball");
             THE_TARGET.Play("show_target");
 
@@ -261,66 +261,37 @@ public class NarratorController : MonoBehaviour{
         Narrator.clip = WeBrokeTheGravityMachine;
         Narrator.Play();
 
-        StartCoroutine(BreathingTest());
+        StartCoroutine(IntroduceCircuits());
     }
 
-    public IEnumerator BreathingTest(){
-        yield return new WaitForSeconds(8f);
+    public IEnumerator IntroduceCircuits(){
+        yield return new WaitForSeconds(9f);
 
         Narrator.clip = SimplerTask;
         Narrator.Play();
 
 
         THE_TABLE.Play("breath_tray_rise");
+
+        StartCoroutine(CircuitTutorialMethod());
     }
 
-    public void GrabbedControl(){
-        if (BreathTutorial){
-            BreathTutorial = false;
+    public IEnumerator CircuitTutorialMethod(){
+        yield return new WaitForSeconds(6f);
+
+        if (CircuitTutorial){
+            CircuitTutorial = false;
 
 
-            Narrator.clip = BreathInstruction;
+            Narrator.clip = CircuitInstruction;
             Narrator.Play();
         }
 
-        BreathGuide.SetActive(true);
 
-        string timeString = GLOBAL_CONTROL.GetRemainingTime().ToString();
+        
+        //Tiles, StartingPoint, EndingPoint, TableCanvas
 
-        Debug.Log(timeString);
-        string[] timeSplit = timeString.Split(",");
-
-        float firstTwo = float.Parse(timeSplit[0]);
-        float secondTwo = 0;
-
-        if(timeSplit.Length > 1){
-            secondTwo = float.Parse(timeSplit[1]);
-        }
-            
-
-        Debug.Log(firstTwo + " " + secondTwo);
-
-        float tens = 10;
-
-        tens = tens - firstTwo;
-
-        tens = tens * 60;
-
-        tens = tens - secondTwo;
-
-        tens = tens/60;
-
-        timeBeforePowerOff = (float) Mathf.Round(tens);
-
-        Debug.Log(tens);
-
-            //int.Parse(timeSplit[0]), int.Parse(timeSplit[1])
-
-        int timer = 10 - (int) timeBeforePowerOff;
-
-        CLOCK.StartNewMinutesCountdown(10, 0);
-
-        StartCountingTimeTillPowerOff(timer);
+        
         
     }
 
@@ -332,16 +303,7 @@ public class NarratorController : MonoBehaviour{
         Narrator.Play();
     }
 
-    public void StartCountingTimeTillPowerOff(int i){
-        timeBeforePowerOff = 60;
-        Debug.Log(timeBeforePowerOff);
-        if(timeBeforePowerOff != 0){
-            StartCoroutine(OneSecond());
-        }
-        else {
-            PowerOutage();
-        }
-    }
+   
 
     private IEnumerator OneSecond(){
         yield return new WaitForSeconds(1f);
@@ -358,6 +320,7 @@ public class NarratorController : MonoBehaviour{
 
     public void PowerOutage(){
         Debug.Log("POWER'S OUT");
+        TableCanvas.SetActive(false);
 
         THE_LIGHT.Play("power_down_with_material");
 
@@ -368,7 +331,7 @@ public class NarratorController : MonoBehaviour{
         BUZZ.Pause();
         RECORDING.Pause();
 
-        BreathGuide.SetActive(false);
+        //BreathGuide.SetActive(false);
 
         rs.StopSparking();
         RenderSettings.ambientIntensity = 1;

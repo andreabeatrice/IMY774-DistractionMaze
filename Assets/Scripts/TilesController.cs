@@ -27,6 +27,9 @@ public class TilesController : MonoBehaviour
 
     int row, col;
 
+    [SerializeField]
+    NarratorController NARRATOR;
+
 
     // Start is called before the first frame update
     void Start()
@@ -56,9 +59,9 @@ public class TilesController : MonoBehaviour
             } 
         }  
 
-        SELECTED = TilesArray[0,0];
-        row = 0;
-        col = 0;
+        SELECTED = TilesArray[3,1];
+        row = 3;
+        col = 1;
 
         SELECTED.GetComponent<MeshRenderer>().materials = selectedMaterial;
     }
@@ -162,6 +165,10 @@ public class TilesController : MonoBehaviour
         ENDPOINT_Line.GetComponent<MeshRenderer>().materials = line;
 
         ENDPOINT.Play("glowy_details_green");
+
+        SELECTED.GetComponent<MeshRenderer>().materials = usualMaterial;
+
+        NARRATOR.PowerOutage();
 
     }
 }
