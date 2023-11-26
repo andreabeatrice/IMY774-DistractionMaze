@@ -21,6 +21,8 @@ public class TilesController : MonoBehaviour
 
     public GameObject ENDPOINT_Gradient, ENDPOINT_Circuitry, ENDPOINT_Line;
 
+    public Animator ENDPOINT;
+
     public Material[] selectedMaterial, usualMaterial, gradient, circuitry, line;
 
     int row, col;
@@ -158,6 +160,8 @@ public class TilesController : MonoBehaviour
         ENDPOINT_Gradient.GetComponent<MeshRenderer>().materials = gradient;
         ENDPOINT_Circuitry.GetComponent<MeshRenderer>().materials = circuitry;
         ENDPOINT_Line.GetComponent<MeshRenderer>().materials = line;
+
+        ENDPOINT.Play("glowy_details_green");
 
     }
 }
