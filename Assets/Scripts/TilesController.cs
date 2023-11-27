@@ -83,6 +83,7 @@ public class TilesController : MonoBehaviour
         }
 
         OnSelectedUpdate();
+        StartCoroutine(OnChange());
         
     }
 
@@ -92,6 +93,7 @@ public class TilesController : MonoBehaviour
         }
 
         OnSelectedUpdate();
+        StartCoroutine(OnChange());
     }
 
     public void GoUp(){
@@ -100,6 +102,7 @@ public class TilesController : MonoBehaviour
         }
 
         OnSelectedUpdate();
+        StartCoroutine(OnChange());
     }
 
     public void GoDown(){
@@ -108,6 +111,7 @@ public class TilesController : MonoBehaviour
         }
 
         OnSelectedUpdate();
+        StartCoroutine(OnChange());
     }
 
     public void RoatateLeft(){
@@ -132,13 +136,10 @@ public class TilesController : MonoBehaviour
 
         SELECTED.GetComponent<MeshRenderer>().materials = selectedMaterial;
 
-        
-        StartCoroutine(OnChange());
-
     }
 
     public IEnumerator OnChange(){
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         Debug.Log("____________________________________________ON CHANGE");
         for (int i = 0; i < TilesArray.GetLength(0); i++) { 
@@ -169,6 +170,8 @@ public class TilesController : MonoBehaviour
         SELECTED.GetComponent<MeshRenderer>().materials = usualMaterial;
 
         NARRATOR.PowerOutage();
+
+        //SaveSystem.SaveProgress(true);
 
     }
 }

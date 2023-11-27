@@ -56,7 +56,7 @@ public class TableController : MonoBehaviour {
 
     public void EnablePhone(){
         
-        PHONE.SetActive(true);
+       // PHONE.SetActive(true);
 
 
 

@@ -33,6 +33,7 @@ public class GlobalControls : MonoBehaviour
     {
         remaining_time = 0f;
         opened =false;
+        SaveSystem.SaveProgress(true);
     }
     
     public bool GetVideoWatched(){
@@ -89,7 +90,7 @@ public class GlobalControls : MonoBehaviour
 
     public void Leave(){
         StopAllCoroutines();
-         Narrator.clip = InterestingChoice2;
+        Narrator.clip = InterestingChoice2;
 
         Narrator.Play();
 

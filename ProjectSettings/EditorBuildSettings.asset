@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VirtualWorldReset.unity
     guid: b7dc4921fb1569d48b1cc1ba00dfa0c5
+  - enabled: 1
+    path: Assets/Scenes/CanvasTaskTest.unity
+    guid: 451f5dcb8f412ee4fad72b99b8697043
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
