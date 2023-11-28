@@ -43,11 +43,11 @@ public class SolvedSceneControls : MonoBehaviour
     }
 
     public IEnumerator LeaveWorld(){
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
         Application.Quit();
     }
 
-    public void ResetMe(){
+    private void ResetMe(){
         SceneManager.LoadScene("VirtualWorld");
     }
 
@@ -59,9 +59,11 @@ public class SolvedSceneControls : MonoBehaviour
 
         THE_LIGHT.Play("power_down_with_material");
         StartCoroutine(Reset());
+        PlayerPrefs.SetString("Solved", "false");
+        PlayerPrefs.Save();
     }
 
-    public IEnumerator Reset(){
+    private IEnumerator Reset(){
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("VirtualWorld");
     }

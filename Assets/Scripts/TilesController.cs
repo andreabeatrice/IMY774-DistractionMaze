@@ -30,6 +30,8 @@ public class TilesController : MonoBehaviour
     [SerializeField]
     NarratorController NARRATOR;
 
+    public AudioSource buttonNoise;
+
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +84,8 @@ public class TilesController : MonoBehaviour
             col += 1;
         }
 
+        buttonNoise.Play();
+
         OnSelectedUpdate();
         
     }
@@ -91,6 +95,7 @@ public class TilesController : MonoBehaviour
             col -= 1;
         }
 
+        buttonNoise.Play();
         OnSelectedUpdate();
     }
 
@@ -99,6 +104,7 @@ public class TilesController : MonoBehaviour
             row -= 1;
         }
 
+        buttonNoise.Play();
         OnSelectedUpdate();
     }
 
@@ -107,16 +113,19 @@ public class TilesController : MonoBehaviour
             row += 1;
         }
 
+        buttonNoise.Play();
         OnSelectedUpdate();
     }
 
     public void RoatateLeft(){
         SELECTED.transform.eulerAngles = new Vector3(SELECTED.transform.eulerAngles.x, (SELECTED.transform.eulerAngles.y - 90), SELECTED.transform.eulerAngles.z);
+        buttonNoise.Play();
         StartCoroutine(OnChange());
     }
 
     public void RotateRight(){
         SELECTED.transform.eulerAngles = new Vector3(SELECTED.transform.eulerAngles.x, (SELECTED.transform.eulerAngles.y + 90), SELECTED.transform.eulerAngles.z);
+        buttonNoise.Play();
         StartCoroutine(OnChange());
     }
 

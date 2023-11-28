@@ -21,11 +21,18 @@ public class GlobalControls : MonoBehaviour
 
     void Awake(){
 
+
+       
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         if(PlayerPrefs.HasKey("Solved")) {
             string loaded_solve = PlayerPrefs.GetString("Solved");
 
             if(string.Compare(loaded_solve, "true") == 0){
-                SceneManager.LoadScene("Canvas");
+                SceneManager.LoadScene("SolvedScene");
             }
             // Use the loadedScore variable as needed
         } else {
@@ -33,14 +40,6 @@ public class GlobalControls : MonoBehaviour
             PlayerPrefs.SetString("Solved", "false");
             PlayerPrefs.Save();
         }
-       
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        remaining_time = 0f;
-        opened =false;
     }
     
     public bool GetVideoWatched(){
