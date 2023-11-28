@@ -20,12 +20,20 @@ public class GlobalControls : MonoBehaviour
     public Animator THE_LIGHT;
 
     void Awake(){
-        if(SaveSystem.LoadProgress() == true){
-            SceneManager.LoadScene("CanvasTaskTest");
-        }
-        else {
 
+        if(PlayerPrefs.HasKey("Solved")) {
+            string loaded_solve = PlayerPrefs.GetString("Solved");
+
+            if(string.Compare(loaded_solve, "true") == 0){
+                SceneManager.LoadScene("Canvas");
+            }
+            // Use the loadedScore variable as needed
+        } else {
+            // Handle the case where the key doesn't exist (no saved score)
+            PlayerPrefs.SetString("Solved", "false");
+            PlayerPrefs.Save();
         }
+       
     }
 
     // Start is called before the first frame update
