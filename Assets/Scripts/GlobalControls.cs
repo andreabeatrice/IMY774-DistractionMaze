@@ -20,20 +20,26 @@ public class GlobalControls : MonoBehaviour
     public Animator THE_LIGHT;
 
     void Awake(){
-        if(SaveSystem.LoadProgress() == true){
-            SceneManager.LoadScene("CanvasTaskTest");
-        }
-        else {
 
-        }
+
+       
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        remaining_time = 0f;
-        opened =false;
-        SaveSystem.SaveProgress(true);
+        if(PlayerPrefs.HasKey("Solved")) {
+            string loaded_solve = PlayerPrefs.GetString("Solved");
+
+            if(string.Compare(loaded_solve, "true") == 0){
+                SceneManager.LoadScene("SolvedScene");
+            }
+            // Use the loadedScore variable as needed
+        } else {
+            // Handle the case where the key doesn't exist (no saved score)
+            PlayerPrefs.SetString("Solved", "false");
+            PlayerPrefs.Save();
+        }
     }
     
     public bool GetVideoWatched(){
@@ -90,7 +96,7 @@ public class GlobalControls : MonoBehaviour
 
     public void Leave(){
         StopAllCoroutines();
-        Narrator.clip = InterestingChoice2;
+         Narrator.clip = InterestingChoice2;
 
         Narrator.Play();
 

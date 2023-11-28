@@ -222,7 +222,6 @@ public class NarratorController : MonoBehaviour{
 
         THE_TABLE.Play("hide_socket");
 
-        SaveSystem.SaveProgress(true);
 
         //THE_TABLE.Play("reveal_books");
         //WellDoneAudio
@@ -328,29 +327,25 @@ public class NarratorController : MonoBehaviour{
 
     private IEnumerator OneSecondLight(int i){
         yield return new WaitForSeconds(1f);
+
+        StartCoroutine(BackUp());
         i -= 1;
         if(i != 0){
             StartCoroutine(OneSecondLight(i));
         }
-        else { //bb.moveobjects
 
-            Narrator.clip = WhatsHappening;
-            Narrator.Play();
-
-            StartCoroutine(BackUp());
-            
-        }
         
     }
 
-     private IEnumerator BackUp(){
-        yield return new WaitForSeconds(3f);
+    private IEnumerator BackUp(){
+        yield return new WaitForSeconds(4f);
 
         THE_LIGHT.Play("power_back_up");
 
         VIDEO_PLAYER.Play("screen_rolldown");
-        VIDEO_AUDIO.Play();
 
+        Narrator.clip = WhatsHappening;
+        Narrator.Play();
         
      }
     
