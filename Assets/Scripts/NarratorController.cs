@@ -343,6 +343,7 @@ public class NarratorController : MonoBehaviour{
         THE_LIGHT.Play("power_back_up");
 
         VIDEO_PLAYER.Play("screen_rolldown");
+        VIDEO_AUDIO.Play();
 
         Narrator.clip = WhatsHappening;
         Narrator.Play();

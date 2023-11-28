@@ -19864,6 +19864,7 @@ MonoBehaviour:
   line:
   - {fileID: 2100000, guid: f8be38f12d22ae745a7eefcc4601c34a, type: 2}
   NARRATOR: {fileID: 987446681}
+  buttonNoise: {fileID: 203818572}
 --- !u!4 &1333965262
 Transform:
   m_ObjectHideFlags: 0
@@ -32115,7 +32116,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8c72f7ed81ac1874b9f896a2423b6252, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
