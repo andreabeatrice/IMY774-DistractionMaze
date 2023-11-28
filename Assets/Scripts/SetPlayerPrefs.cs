@@ -32,7 +32,7 @@ public class SetPlayerPrefs : MonoBehaviour
     }
 
     public IEnumerator SetSolvedTrue30(){
-        yield return new WaitForSeconds(31f);
+        yield return new WaitForSeconds(10f);
 
         PlayerPrefs.SetString("Solved", "true");
         PlayerPrefs.Save();
