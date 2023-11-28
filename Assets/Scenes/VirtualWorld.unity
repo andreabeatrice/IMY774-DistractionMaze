@@ -5110,7 +5110,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472472316}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9610cc7a6e712ce4a9526b903ecae771, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 55c71430471cd584286b13adf8a947ca, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6076,14 +6076,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526674329}
-  m_LocalRotation: {x: -0.7071068, y: -0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: 1.23, y: 7.56, z: -1.195695}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 1.23, y: 0.97, z: -1.195695}
   m_LocalScale: {x: 0.9, y: 1, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 909036670}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 270}
 --- !u!1 &527720092
 GameObject:
   m_ObjectHideFlags: 0
@@ -12572,7 +12572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909036669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8448563, y: 0.2587677, z: 1.222695}
+  m_LocalPosition: {x: -5.8448563, y: 6.49, z: 1.222695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13457,6 +13457,7 @@ MonoBehaviour:
   TableCanvas: {fileID: 203818568}
   OPC: {fileID: 682761164}
   rs: {fileID: 869030767}
+  vp: {fileID: 0}
   YouKnowEvenThoughThisRoomIsVeryEmpty: {fileID: 8300000, guid: 9801ce78b278ac74aa3f778758c14791,
     type: 3}
   GoOnPickItUp: {fileID: 8300000, guid: 35ce3af2c651d6f42ac4970addbbdedc, type: 3}

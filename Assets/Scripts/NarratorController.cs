@@ -29,6 +29,8 @@ public class NarratorController : MonoBehaviour{
     [SerializeField]
     RandomSparking rs;
 
+    public GameObject vp;
+
 
     public AudioClip YouKnowEvenThoughThisRoomIsVeryEmpty, GoOnPickItUp, WellDoneOnPickingItUp, ShameYouMissed, FingersChangingColor, ThatTookLongAudio, PleaseReturnAudio, SocketAudio, WellDoneAudio, YouWillBeTimed, BookInstructions, ByColorResponseAudio, FaultyGravityExcuse;
 
@@ -37,6 +39,7 @@ public class NarratorController : MonoBehaviour{
     private bool FirstTouchPickUp, DistancePickupTutorial, CircuitTutorial;
 
     private float timeBeforePowerOff;
+
 
     // Start is called before the first frame update
     void Start(){
@@ -48,6 +51,8 @@ public class NarratorController : MonoBehaviour{
             FirstTouchPickUp = true;
             DistancePickupTutorial = true;
             CircuitTutorial = true;
+
+           
         }
         else {
             ShowDistanceGrab();
@@ -339,11 +344,17 @@ public class NarratorController : MonoBehaviour{
 
     private IEnumerator BackUp(){
         yield return new WaitForSeconds(4f);
+        var player = vp.GetComponentInChildren<UnityEngine.Video.VideoPlayer>();
 
         THE_LIGHT.Play("power_back_up");
 
         VIDEO_PLAYER.Play("screen_rolldown");
         VIDEO_AUDIO.Play();
+        //vp.Play();
+
+        player.Play();
+
+
 
         Narrator.clip = WhatsHappening;
         Narrator.Play();
